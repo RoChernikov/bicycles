@@ -1,0 +1,14 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+//--+++Переменные+++--
+@import '../modules/veriables.scss';
+//--+++Миксины+++--
+@import '../modules/mixins.scss';
+@import '../modules/blocks/page/page.scss';
+@import '../modules/blocks/page-text/page-text.scss';
+//--+++Шапка сайта+++--
+@import '../modules/blocks/header/header.scss';
+//--+++Основная часть сайта+++--
+@import '../modules/blocks/main/main.scss';
+//--+++Подвал сайта+++--
+@import '../modules/blocks/footer/footer.scss';
