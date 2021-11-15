@@ -1,0 +1,7 @@
+$className: 'menu__link';
+
+.#{$className} {
+  font-size: $primaryNavFontSize;
+  line-height: $primaryNavLineHeight;
+  font-weight: 600;
+}
