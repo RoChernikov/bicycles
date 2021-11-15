@@ -1,0 +1,7 @@
+$className: 'header__link';
+
+.#{$className} {
+  font-size: $secondaryNavFontSize;
+  line-height: $secondaryNavLineHeight;
+  font-weight: 500;
+}

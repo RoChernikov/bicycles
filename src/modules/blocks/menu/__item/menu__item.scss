@@ -1,0 +1,9 @@
+$className: 'menu__item';
+
+.#{$className} {
+  margin-right: 34px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

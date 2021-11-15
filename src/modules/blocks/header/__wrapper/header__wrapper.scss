@@ -1,0 +1,10 @@
+$className: 'header__wrapper';
+
+.#{$className} {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 0.5px dashed green;
+  width: 100%;
+  min-height: 74px;
+}

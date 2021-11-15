@@ -7,8 +7,16 @@
 @import '../modules/blocks/page/page.scss';
 @import '../modules/blocks/page/__section/page__section.scss';
 @import '../modules/blocks/page-text/page-text.scss';
+@import '../modules/blocks/page-list/page-list.scss';
+@import '../modules/blocks/page-link/page-link.scss';
+//--+++menu+++--
+@import '../modules/blocks/menu/menu.scss';
+@import '../modules/blocks/menu/__item/menu__item.scss';
+@import '../modules/blocks/menu/__link/menu__link.scss';
 //--+++Шапка сайта+++--
 @import '../modules/blocks/header/header.scss';
+@import '../modules/blocks/header/__wrapper/header__wrapper.scss';
+@import '../modules/blocks/header/__link/header__link.scss';
 //--+++Основная часть сайта+++--
 @import '../modules/blocks/content/content.scss';
 //--+++Подвал сайта+++--
