@@ -35,12 +35,30 @@
       </div>
     </header>
     <!-- Основная часть сайта -->
-    <main class="content page__section" style="height: 1000px">
+    <main class="content page__section">
       <h1 style="border: 0.5px dashed blue">Content</h1>
     </main>
     <!-- Подвал сайта -->
     <footer class="footer page__section">
-      <h1 style="border: 0.5px dashed red">Footer</h1>
+      <h3 class="footer__title page-text">Подпишитесь на рассылку —</h3>
+      <form class="footer__form" name="email-subscribe-form">
+        <input
+          type="email"
+          class="footer__input"
+          placeholder="Ваш e-mail"
+          name="email-input"
+        />
+        <input
+          type="button"
+          class="footer__form-submit"
+          name="footer-form-submit"
+          value="ok"
+        />
+      </form>
+      <div class="footer__lower-container">
+        <p class="footer__copyright page-text">© Road Club 2021</p>
+        <div class="theme-switch footer__theme-switch"></div>
+      </div>
     </footer>
   </body>
 </html>
