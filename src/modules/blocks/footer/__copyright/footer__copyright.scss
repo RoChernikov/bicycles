@@ -1,0 +1,9 @@
+$className: 'footer__copyright';
+
+.#{$className} {
+  font-family: $primaryFontFamily;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #cfcfcf;
+}
