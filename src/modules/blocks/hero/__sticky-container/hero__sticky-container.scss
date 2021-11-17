@@ -1,0 +1,11 @@
+$className: 'hero__sticky-container';
+
+.#{$className} {
+  position: relative;
+  right: 200px;
+  grid-column: 2;
+  grid-row: 1/6;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 372px 0 79px 0;
+}
