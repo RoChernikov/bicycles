@@ -1,6 +1,7 @@
 $className: 'button';
 
 .#{$className} {
+  position: relative;
   width: 180px;
   height: 50px;
   border: none;
@@ -10,4 +11,29 @@ $className: 'button';
   font-weight: 600;
   font-size: $secondaryNavFontSize;
   background-color: $btnColor;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.2s ease;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    width: 0;
+    height: 50px;
+    background-color: $hoveredBtnColor;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover::before {
+    width: 180px;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
 }
