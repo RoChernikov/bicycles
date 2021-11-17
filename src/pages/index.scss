@@ -32,7 +32,8 @@
 @import '../modules/blocks/content/__title/content__title.scss';
 @import '../modules/blocks/content/__text/content__text.scss';
 @import '../modules/blocks/content/__section/content__section.scss';
-@import '../modules/blocks/content/__section/_type/content__section_type_wide.scss';
+@import '../modules/blocks/content/__section/_place/content__section_place_hero.scss';
+@import '../modules/blocks/content/__section/_place/content__section_place_quote.scss';
 //--+++hero+++--
 @import '../modules/blocks/hero/hero.scss';
 @import '../modules/blocks/hero/__title/hero__title.scss';
@@ -46,6 +47,10 @@
 @import '../modules/blocks/hero/__bike-fix/hero__bike-fix.scss';
 //--+++quote+++--
 @import '../modules/blocks/quote/quote.scss';
+@import '../modules/blocks/quote/__img/quote__img.scss';
+@import '../modules/blocks/quote/__title/quote__title.scss';
+@import '../modules/blocks/quote/__author/quote__author.scss';
+@import '../modules/blocks/quote/__author-about/quote__author-about.scss';
 //--+++Подвал сайта+++--
 @import '../modules/blocks/footer/footer.scss';
 @import '../modules/blocks/footer/__title/footer__title.scss';

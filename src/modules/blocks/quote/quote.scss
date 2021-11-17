@@ -1,6 +1,7 @@
 $className: 'quote';
 
 .#{$className} {
-  min-height: 200px;
-  border: 0.5px solid purple;
+  display: grid;
+  column-gap: 80px;
+  grid-template-columns: minmax(min-content, 650px) 1fr;
 }

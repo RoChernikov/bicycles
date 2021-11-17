@@ -1,0 +1,12 @@
+$className: 'quote__title';
+
+.#{$className} {
+  font-family: $primaryFontFamily;
+  font-size: $secondaryTitleFontSize;
+  line-height: $secondaryTitleLineHeight;
+  font-weight: $secondaryTitleFontWeight;
+  color: $secondaryFontColor;
+  grid-column: 2;
+  max-width: 470px;
+  letter-spacing: -0.5px;
+}

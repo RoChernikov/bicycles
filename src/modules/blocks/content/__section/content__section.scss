@@ -1,7 +1,7 @@
 $className: 'content__section';
 
 .#{$className} {
-  padding: 20px 120px 0;
+  padding: 0 120px;
 }
 
 @include breakPoint($className, $smallDesktop) {
