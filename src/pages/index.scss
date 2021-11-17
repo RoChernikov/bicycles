@@ -4,11 +4,14 @@
 @import '../modules/veriables.scss';
 //--+++Миксины+++--
 @import '../modules/mixins.scss';
+//_______________________________________________________________________________________
 @import '../modules/blocks/page/page.scss';
 @import '../modules/blocks/page/__section/page__section.scss';
+@import '../modules/blocks/page/__section/_place/page__section_place_content.scss';
 @import '../modules/blocks/page-text/page-text.scss';
 @import '../modules/blocks/page-list/page-list.scss';
 @import '../modules/blocks/page-link/page-link.scss';
+@import '../modules/blocks/button/button.scss';
 //--+++theme-switch+++--
 @import '../modules/blocks/theme-switch/theme-switch.scss';
 @import '../modules/blocks/theme-switch/__switcher/theme-switch__switcher.scss';
@@ -24,8 +27,23 @@
 @import '../modules/blocks/header/header.scss';
 @import '../modules/blocks/header/__wrapper/header__wrapper.scss';
 @import '../modules/blocks/header/__link/header__link.scss';
-//--+++Основная часть сайта+++--
+//--+++content+++--
 @import '../modules/blocks/content/content.scss';
+@import '../modules/blocks/content/__title/content__title.scss';
+@import '../modules/blocks/content/__text/content__text.scss';
+@import '../modules/blocks/content/__section/content__section.scss';
+@import '../modules/blocks/content/__section/_type/content__section_type_wide.scss';
+//--+++hero+++--
+@import '../modules/blocks/hero/hero.scss';
+@import '../modules/blocks/hero/__title/hero__title.scss';
+@import '../modules/blocks/hero/__text/hero__text.scss';
+@import '../modules/blocks/hero/__button/hero__button.scss';
+@import '../modules/blocks/hero/__pointer/hero__pointer.scss';
+@import '../modules/blocks/hero/__caption/hero__caption.scss';
+@import '../modules/blocks/hero/__caption-line/hero__caption-line.scss';
+@import '../modules/blocks/hero/__image/hero__image.scss';
+//--+++quote+++--
+@import '../modules/blocks/quote/quote.scss';
 //--+++Подвал сайта+++--
 @import '../modules/blocks/footer/footer.scss';
 @import '../modules/blocks/footer/__title/footer__title.scss';

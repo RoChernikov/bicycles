@@ -1,0 +1,8 @@
+$className: 'hero';
+
+.#{$className} {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  align-items: flex-start;
+}
