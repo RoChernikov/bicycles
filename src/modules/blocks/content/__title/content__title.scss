@@ -1,0 +1,9 @@
+$className: 'content__title';
+
+.#{$className} {
+  font-family: $primaryFontFamily;
+  font-size: $primaryTitleFontSize;
+  line-height: $primaryTitleLineHeight;
+  font-weight: $primaryTitleFontWeight;
+  color: $secondaryFontColor;
+}

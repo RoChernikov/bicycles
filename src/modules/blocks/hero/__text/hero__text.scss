@@ -1,0 +1,12 @@
+$className: 'hero__text';
+
+.#{$className} {
+  font-family: $primaryFontFamily;
+  font-size: $primaryFontSize;
+  line-height: $primaryLineHeight;
+  font-weight: $primaryFontWeight;
+  color: $primaryFontColor;
+  opacity: 70%;
+  margin-top: 50px;
+  max-width: 460px;
+}

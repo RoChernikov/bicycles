@@ -1,0 +1,21 @@
+$className: 'content__section';
+
+.#{$className} {
+  padding: 20px 120px 0;
+}
+
+@include breakPoint($className, $smallDesktop) {
+  padding: 0 90px;
+}
+
+@include breakPoint($className, $tablet) {
+  padding: 0 60px;
+}
+
+@include breakPoint($className, $mobile) {
+  padding: 0 30px;
+}
+
+@include breakPoint($className, $smallMobile) {
+  padding: 0 18px;
+}

@@ -1,0 +1,7 @@
+$className: 'hero__caption';
+
+.#{$className} {
+  font-size: $primaryFontSize;
+  line-height: 1;
+  color: $secondaryFontColor;
+}

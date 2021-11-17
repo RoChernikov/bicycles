@@ -1,0 +1,7 @@
+$className: 'hero__image';
+
+.#{$className} {
+  max-width: 610px;
+  grid-column: 2;
+  grid-row: 1/6;
+}
