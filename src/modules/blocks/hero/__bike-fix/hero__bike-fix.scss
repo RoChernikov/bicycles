@@ -1,0 +1,17 @@
+$className: 'hero__bike-fix';
+
+.#{$className} {
+  // margin-right: 370px;
+  // margin-right: 25.6%;
+  border-radius: 20px;
+  box-sizing: content-box;
+  padding: 25px 50px 15px;
+  background-color: $backgroundColor;
+  width: 340px;
+  height: 260px;
+  object-fit: cover;
+  position: sticky;
+  top: 110px;
+  right: 25.6%;
+  box-shadow: -20px 60px 220px 0px rgba(0, 0, 0, 0.2);
+}
