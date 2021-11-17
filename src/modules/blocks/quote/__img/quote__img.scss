@@ -1,0 +1,8 @@
+$className: 'quote__img';
+
+.#{$className} {
+  display: block;
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1/5;
+}

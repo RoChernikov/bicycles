@@ -1,0 +1,11 @@
+$className: 'quote__author';
+
+.#{$className} {
+  font-family: $primaryFontFamily;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: $secondaryFontWeight;
+  color: $secondaryFontColor;
+  grid-column: 2;
+  margin-top: 262px;
+}
