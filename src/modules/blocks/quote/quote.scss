@@ -3,5 +3,5 @@ $className: 'quote';
 .#{$className} {
   display: grid;
   column-gap: 80px;
-  grid-template-columns: minmax(min-content, 650px) 1fr;
+  grid-template-columns: minmax(min-content, 650px) minmax(470px, 1fr);
 }

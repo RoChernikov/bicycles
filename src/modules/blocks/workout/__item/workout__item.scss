@@ -1,0 +1,9 @@
+$className: 'workout__item';
+
+.#{$className} {
+  margin-right: 30px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

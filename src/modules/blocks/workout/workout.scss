@@ -1,0 +1,6 @@
+$className: 'workout';
+
+.#{$className} {
+  display: grid;
+  grid-template-columns: minmax(540px, 1fr) minmax(min-content, 580px);
+}

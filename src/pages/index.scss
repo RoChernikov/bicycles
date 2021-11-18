@@ -34,6 +34,7 @@
 @import '../modules/blocks/content/__section/content__section.scss';
 @import '../modules/blocks/content/__section/_place/content__section_place_hero.scss';
 @import '../modules/blocks/content/__section/_place/content__section_place_quote.scss';
+@import '../modules/blocks/content/__section/_place/content__section_place_workout.scss';
 //--+++hero+++--
 @import '../modules/blocks/hero/hero.scss';
 @import '../modules/blocks/hero/__title/hero__title.scss';
@@ -51,6 +52,14 @@
 @import '../modules/blocks/quote/__title/quote__title.scss';
 @import '../modules/blocks/quote/__author/quote__author.scss';
 @import '../modules/blocks/quote/__author-about/quote__author-about.scss';
+//--+++workout+++--
+@import '../modules/blocks/workout/workout.scss';
+@import '../modules/blocks/workout/__title/workout__title.scss';
+@import '../modules/blocks/workout/__text/workout__text.scss';
+@import '../modules/blocks/workout/__list/workout__list.scss';
+@import '../modules/blocks/workout/__item/workout__item.scss';
+@import '../modules/blocks/workout/__link/workout__link.scss';
+@import '../modules/blocks/workout/__img/workout__img.scss';
 //--+++Подвал сайта+++--
 @import '../modules/blocks/footer/footer.scss';
 @import '../modules/blocks/footer/__title/footer__title.scss';
