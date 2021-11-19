@@ -4,3 +4,7 @@ $className: 'menu';
   display: flex;
   align-items: center;
 }
+
+@include breakPoint($className, $smallMobile) {
+  display: none;
+}
