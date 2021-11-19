@@ -7,3 +7,11 @@ $className: 'menu__item';
     margin-right: 0;
   }
 }
+
+@include breakPoint($className, $smallMobile) {
+  margin-right: 0;
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

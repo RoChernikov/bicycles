@@ -6,5 +6,6 @@ $className: 'menu';
 }
 
 @include breakPoint($className, $smallMobile) {
-  display: none;
+  flex-direction: column;
+  margin-top: 146px;
 }
