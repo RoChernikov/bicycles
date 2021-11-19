@@ -8,3 +8,7 @@ $className: 'footer__title';
   color: $secondaryFontColor;
   margin-top: 80px;
 }
+
+@include breakPoint($className, $smallMobile) {
+  margin-top: 60px;
+}
