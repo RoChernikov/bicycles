@@ -2,6 +2,10 @@ $className: 'footer__form';
 
 .#{$className} {
   position: relative;
-  width: 360px;
+  max-width: 360px;
   margin-top: 50px;
+}
+
+@include breakPoint($className, $smallMobile) {
+  margin-top: 40px;
 }

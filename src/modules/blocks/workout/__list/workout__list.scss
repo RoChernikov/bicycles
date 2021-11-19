@@ -7,5 +7,4 @@ $className: 'workout__list';
 
 @include breakPoint($className, $mobile) {
   margin-top: 40px;
-  margin-bottom: 60px;
 }
