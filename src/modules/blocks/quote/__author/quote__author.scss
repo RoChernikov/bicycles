@@ -9,3 +9,14 @@ $className: 'quote__author';
   grid-column: 2;
   margin-top: 262px;
 }
+
+@include breakPoint($className, $mobile) {
+  grid-column: 1;
+  grid-row: 3;
+  margin-top: 80px;
+}
+
+@include breakPoint($className, $smallMobile) {
+  font-size: 14px;
+  margin-top: 35px;
+}

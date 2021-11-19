@@ -4,3 +4,12 @@ $className: 'content__section_place_quote';
   padding-top: 120px;
   padding-bottom: 60px;
 }
+
+@include breakPoint($className, $mobile) {
+  padding-top: 60px;
+}
+
+@include breakPoint($className, $smallMobile) {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
