@@ -26,9 +26,12 @@
 //--+++Шапка сайта+++--
 @import '../modules/blocks/header/header.scss';
 @import '../modules/blocks/header/__wrapper/header__wrapper.scss';
+@import '../modules/blocks/header/__nav/header__nav.scss';
+@import '../modules/blocks/header/__nav/_active/header__nav_active.scss';
 @import '../modules/blocks/header/__link/header__link.scss';
 @import '../modules/blocks/header/__burger/header__burger.scss';
 @import '../modules/blocks/header/__burger-elements/header__burger-elements.scss';
+@import '../modules/blocks/header/__theme-switch/header__theme-switch.scss';
 //--+++content+++--
 @import '../modules/blocks/content/content.scss';
 @import '../modules/blocks/content/__title/content__title.scss';

@@ -1,0 +1,10 @@
+$className: 'header__theme-switch';
+
+.#{$className} {
+  display: none;
+}
+
+@include breakPoint($className, $smallMobile) {
+  display: flex;
+  margin-bottom: 36px;
+}
