@@ -7,7 +7,7 @@ $className: 'quote__author';
   font-weight: $secondaryFontWeight;
   color: $secondaryFontColor;
   grid-column: 2;
-  margin-top: 262px;
+  margin-top: 257px;
 }
 
 @include breakPoint($className, $mobile) {

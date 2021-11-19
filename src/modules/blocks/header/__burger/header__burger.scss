@@ -1,0 +1,16 @@
+$className: 'header__burger';
+
+.#{$className} {
+  display: none;
+
+  &:checked + .header__burger-elements {
+    height: 0px;
+  }
+
+  &:checked + .header__burger-elements:after {
+    transform: rotate(-45deg);
+  }
+  &:checked + .header__burger-elements:before {
+    transform: rotate(45deg) translate(-5.5px, 2.5px);
+  }
+}

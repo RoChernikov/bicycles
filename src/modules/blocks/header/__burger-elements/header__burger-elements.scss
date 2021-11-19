@@ -1,0 +1,40 @@
+$className: 'header__burger-elements';
+
+.#{$className} {
+  display: none;
+  width: 22px;
+  height: 3px;
+  background: #151515;
+  cursor: pointer;
+  transition: 0.1s;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-4px);
+
+  &:before {
+    content: '';
+    width: 22px;
+    height: 3px;
+    background: #151515;
+    background-color: transparent;
+    height: 16px;
+    border-top: 3px solid #151515;
+    position: absolute;
+    transform: translateY(-8px);
+    transition: 0.4s;
+  }
+  &:after {
+    content: '';
+    width: 22px;
+    height: 3px;
+    background: #151515;
+    position: absolute;
+    transform: translateY(8px);
+    transition: 0.4s;
+  }
+}
+
+@include breakPoint($className, $smallMobile) {
+  display: block;
+}
