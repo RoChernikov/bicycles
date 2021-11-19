@@ -9,3 +9,9 @@ $className: 'content__text';
   opacity: 70%;
   max-width: 460px;
 }
+
+@include breakPoint($className, $smallMobile) {
+  font-size: $primaryFontSizeMobile;
+  line-height: $primaryLineHeightMobile;
+  max-width: 100%;
+}

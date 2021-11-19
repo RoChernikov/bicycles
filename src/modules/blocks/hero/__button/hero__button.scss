@@ -1,5 +1,19 @@
 $className: 'hero__button';
 
 .#{$className} {
-  margin-top: 50px;
+  margin-top: 53px;
+}
+
+@include breakPoint($className, $smallTablet) {
+  margin-top: 90px;
+}
+
+@include breakPoint($className, $mobile) {
+  margin: 40px 0;
+  width: 284px;
+}
+
+@include breakPoint($className, $smallMobile) {
+  margin-bottom: 80px;
+  width: 100%;
 }
