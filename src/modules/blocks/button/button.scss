@@ -37,3 +37,9 @@ $className: 'button';
     transform: scale(0.97);
   }
 }
+
+@include breakPoint($className, $smallMobile) {
+  height: 46px;
+  font-size: 13px;
+  line-height: $primaryLineHeightMobile;
+}

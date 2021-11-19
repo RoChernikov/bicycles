@@ -1,0 +1,17 @@
+$className: 'hero__img-container';
+
+.#{$className} {
+  grid-column: 2;
+  grid-row: 1/6;
+}
+
+@include breakPoint($className, $mobile) {
+  grid-column: 1;
+  grid-row: 2;
+  padding-left: 60px;
+  margin-top: 40px;
+}
+
+@include breakPoint($className, $smallMobile) {
+  padding-left: 30px;
+}

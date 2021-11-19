@@ -3,6 +3,18 @@ $className: 'hero';
 .#{$className} {
   display: grid;
   grid-template-columns: 1fr min-content;
-  grid-template-columns: minmax(620px, 1fr) minmax(300px, 610px);
+  grid-template-columns: minmax(460px, 1fr) 610px;
   align-items: flex-start;
+}
+
+@include breakPoint($className, $smallDesktop) {
+  grid-template-columns: minmax(470px, 1fr) 1fr;
+}
+
+@include breakPoint($className, $smallTablet) {
+  grid-template-columns: minmax(440px, 1fr) 1fr;
+}
+
+@include breakPoint($className, $mobile) {
+  grid-template-columns: 1fr;
 }

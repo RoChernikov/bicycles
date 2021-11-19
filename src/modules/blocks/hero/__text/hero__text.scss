@@ -1,5 +1,16 @@
 $className: 'hero__text';
 
 .#{$className} {
-  margin-top: 50px;
+  margin-top: 43px;
+}
+
+@include breakPoint($className, $smallTablet) {
+  margin-top: 90px;
+  max-width: 350px;
+}
+
+@include breakPoint($className, $mobile) {
+  margin-top: 36px;
+  justify-self: center;
+  max-width: 100%;
 }

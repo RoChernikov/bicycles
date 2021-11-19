@@ -8,3 +8,16 @@ $className: 'content__title';
   color: $secondaryFontColor;
   letter-spacing: -0.5px;
 }
+
+@include breakPoint($className, $tablet) {
+  font-size: $primaryTitleFontSizeTablet;
+}
+
+@include breakPoint($className, $smallTablet) {
+  font-size: $primaryTitleFontSizeSmallTablet;
+}
+
+@include breakPoint($className, $smallMobile) {
+  font-size: $primaryTitleFontSizeSmallMobile;
+  line-height: $primaryTitleLineHeightSmallMobile;
+}

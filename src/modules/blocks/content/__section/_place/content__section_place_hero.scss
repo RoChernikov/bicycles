@@ -15,8 +15,10 @@ $className: 'content__section_place_hero';
 
 @include breakPoint($className, $mobile) {
   padding-left: 30px;
+  padding-right: 30px;
 }
 
 @include breakPoint($className, $smallMobile) {
   padding-left: 18px;
+  padding-right: 18px;
 }

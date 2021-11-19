@@ -3,5 +3,13 @@ $className: 'hero__pointer';
 .#{$className} {
   display: flex;
   align-items: center;
-  margin-top: 167px;
+  margin-top: 169px;
+}
+
+@include breakPoint($className, $smallDesktop) {
+  margin-top: 80px;
+}
+
+@include breakPoint($className, $smallTablet) {
+  display: none;
 }
