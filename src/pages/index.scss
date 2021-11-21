@@ -6,6 +6,7 @@
 @import '../modules/mixins.scss';
 //_______________________________________________________________________________________
 @import '../modules/blocks/page/page.scss';
+@import '../modules/blocks/page/_hold/page_hold.css';
 @import '../modules/blocks/page/__section/page__section.scss';
 @import '../modules/blocks/page/__section/_place/page__section_place_content.scss';
 @import '../modules/blocks/page-text/page-text.scss';
@@ -39,6 +40,7 @@
 @import '../modules/blocks/content/__section/content__section.scss';
 @import '../modules/blocks/content/__section/_place/content__section_place_hero.scss';
 @import '../modules/blocks/content/__section/_place/content__section_place_quote.scss';
+@import '../modules/blocks/content/__section/_place/content__section_place_roads.scss';
 @import '../modules/blocks/content/__section/_place/content__section_place_workout.scss';
 //--+++hero+++--
 @import '../modules/blocks/hero/hero.scss';
@@ -58,6 +60,21 @@
 @import '../modules/blocks/quote/__title/quote__title.scss';
 @import '../modules/blocks/quote/__author/quote__author.scss';
 @import '../modules/blocks/quote/__author-about/quote__author-about.scss';
+//--+++roads+++--
+@import '../modules/blocks/roads/roads.scss';
+@import '../modules/blocks/roads/__title/roads__title.scss';
+@import '../modules/blocks/roads/__text/roads__text.scss';
+@import '../modules/blocks/roads/__img-list/roads__img-list.scss';
+@import '../modules/blocks/roads/__img-item/roads__img-item.scss';
+@import '../modules/blocks/roads/__img/roads__img.scss';
+@import '../modules/blocks/roads/__badge/roads__badge.scss';
+@import '../modules/blocks/roads/__badge/_type/roads__badge_type_highway.scss';
+@import '../modules/blocks/roads/__badge/_type/roads__padge_type_gravel.scss';
+@import '../modules/blocks/roads/__badge/_type/roads__badge_type_tt.scss';
+@import '../modules/blocks/roads/__navigation/roads__navigation.scss';
+@import '../modules/blocks/roads/__nav-btn/roads__nav-btn.scss';
+@import '../modules/blocks/roads/__nav-btn/_type/roads__nav-btn_type_prev.scss';
+@import '../modules/blocks/roads/__nav-btn/_type/roads__nav-btn_type_next.scss';
 //--+++workout+++--
 @import '../modules/blocks/workout/workout.scss';
 @import '../modules/blocks/workout/__title/workout__title.scss';
@@ -76,3 +93,16 @@
 @import '../modules/blocks/footer/__copyright/footer__copyright.scss';
 @import '../modules/blocks/footer/__theme-switch/footer__theme-switch.scss';
 @import '../modules/blocks/footer/__logo/footer__logo.scss';
+
+.test-slider {
+  overflow: hidden;
+}
+
+.test-slider__wrapper {
+  display: flex;
+}
+.test-slider__item {
+  box-sizing: border-box;
+  width: 100%;
+  flex-shrink: 0;
+}

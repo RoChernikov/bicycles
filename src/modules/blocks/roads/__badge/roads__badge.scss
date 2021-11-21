@@ -1,0 +1,11 @@
+$className: 'roads__badge';
+
+.#{$className} {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  width: 100px;
+  height: 40px;
+  background-size: contain;
+  background-position: center;
+}
