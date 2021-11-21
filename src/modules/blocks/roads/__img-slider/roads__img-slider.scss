@@ -1,0 +1,11 @@
+$className: 'roads__img-slider';
+
+.#{$className} {
+  overflow: hidden;
+  margin-top: 80px;
+  grid-row: 1;
+  grid-column: 1;
+  align-self: flex-end;
+  z-index: 1;
+  width: calc(100% + 20px);
+}

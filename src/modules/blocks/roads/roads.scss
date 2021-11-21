@@ -1,4 +1,6 @@
 $className: 'roads';
 
 .#{$className} {
+  display: grid;
+  overflow: hidden;
 }

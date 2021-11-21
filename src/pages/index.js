@@ -33,13 +33,15 @@ function toggleMenu() {
 burgerBtn.addEventListener('click', toggleMenu);
 menuItems.forEach(item => item.addEventListener('click', closeMenu));
 
-// --+++ТЕСТОВЫЙ СЛАЙДЕР (ROADS)+++--
-const imageCardsSlider = new Swiper('.test-slider', {
+// --+++ROADS TEXT-SLIDER+++--
+const roadsTextSlider = new Swiper('.roads__text-slider', {
   // Параметры
-  wrapperClass: 'test-slider__wrapper',
-  slideClass: 'test-slider__item',
+  wrapperClass: 'roads__text-slider-wrapper',
+  slideClass: 'roads__text-slider-item',
   direction: 'horizontal',
   loop: true,
+  speed: 500,
+  allowTouchMove: false,
   spaceBetween: 60,
 
   // Навигация
@@ -49,5 +51,22 @@ const imageCardsSlider = new Swiper('.test-slider', {
   }
 });
 // -----------------------------------------------------------------
-// PROTOTYPE!--------------------------------------------------------
-// ******************************************************************
+// --+++ROADS IMG-SLIDER+++--
+const roadsImgSlider = new Swiper('.roads__img-slider', {
+  // Параметры
+  wrapperClass: 'roads__img-slider-wrapper',
+  slideClass: 'roads__img-slider-item',
+  direction: 'horizontal',
+  loop: true,
+  speed: 400,
+  allowTouchMove: false,
+  slidesPerView: 2,
+  spaceBetween: 40,
+
+  // Навигация
+  navigation: {
+    nextEl: '.roads__nav-btn_type_next',
+    prevEl: '.roads__nav-btn_type_prev'
+  }
+});
+// -----------------------------------------------------------------
