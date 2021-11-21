@@ -1,0 +1,8 @@
+$className: 'roads__text-slider';
+
+.#{$className} {
+  overflow: hidden;
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 2;
+}

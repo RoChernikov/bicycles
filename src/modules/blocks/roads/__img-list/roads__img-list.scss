@@ -1,9 +1,0 @@
-$className: 'roads__img-list';
-
-.#{$className} {
-  margin-top: 80px;
-  width: calc(100% + 20px);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
-}

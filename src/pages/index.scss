@@ -63,9 +63,13 @@
 //--+++roads+++--
 @import '../modules/blocks/roads/roads.scss';
 @import '../modules/blocks/roads/__title/roads__title.scss';
+@import '../modules/blocks/roads/__text-slider/roads__text-slider.scss';
+@import '../modules/blocks/roads/__text-slider-wrapper/roads__text-slider-wrapper.scss';
+@import '../modules/blocks/roads/__text-slider-item/roads__text-slider-item.scss';
+@import '../modules/blocks/roads/__img-slider/roads__img-slider.scss';
+@import '../modules/blocks/roads/__img-slider-wrapper/roads__img-slider-wrapper.scss';
+@import '../modules/blocks/roads/__img-slider-item/roads__img-slider-item.scss';
 @import '../modules/blocks/roads/__text/roads__text.scss';
-@import '../modules/blocks/roads/__img-list/roads__img-list.scss';
-@import '../modules/blocks/roads/__img-item/roads__img-item.scss';
 @import '../modules/blocks/roads/__img/roads__img.scss';
 @import '../modules/blocks/roads/__badge/roads__badge.scss';
 @import '../modules/blocks/roads/__badge/_type/roads__badge_type_highway.scss';
@@ -93,16 +97,3 @@
 @import '../modules/blocks/footer/__copyright/footer__copyright.scss';
 @import '../modules/blocks/footer/__theme-switch/footer__theme-switch.scss';
 @import '../modules/blocks/footer/__logo/footer__logo.scss';
-
-.test-slider {
-  overflow: hidden;
-}
-
-.test-slider__wrapper {
-  display: flex;
-}
-.test-slider__item {
-  box-sizing: border-box;
-  width: 100%;
-  flex-shrink: 0;
-}
