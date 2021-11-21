@@ -10,7 +10,7 @@ Swiper.use([Navigation]);
 const burgerBtn = document.querySelector('.header__burger');
 const burgerMenu = document.querySelector('.header__nav');
 const body = document.querySelector('.page');
-const menuItems = document.querySelectorAll('.menu__item');
+const menu = document.querySelector('.menu');
 
 const openMenu = () => {
   burgerMenu.classList.add('header__nav_active');
@@ -31,7 +31,11 @@ function toggleMenu() {
 }
 
 burgerBtn.addEventListener('click', toggleMenu);
-menuItems.forEach(item => item.addEventListener('click', closeMenu));
+menu.addEventListener('click', evt => {
+  if (evt.target.classList.contains('menu__link')) {
+    closeMenu();
+  }
+});
 
 // --+++ROADS TEXT-SLIDER+++--
 const roadsTextSlider = new Swiper('.roads__text-slider', {
