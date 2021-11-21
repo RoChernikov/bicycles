@@ -41,7 +41,7 @@ const roadsTextSlider = new Swiper('.roads__text-slider', {
   direction: 'horizontal',
   loop: true,
   speed: 500,
-  allowTouchMove: false,
+  // allowTouchMove: false,
   spaceBetween: 60,
 
   // Навигация
@@ -59,7 +59,7 @@ const roadsImgSlider = new Swiper('.roads__img-slider', {
   direction: 'horizontal',
   loop: true,
   speed: 400,
-  allowTouchMove: false,
+  // allowTouchMove: false,
   slidesPerView: 2,
   spaceBetween: 40,
 
@@ -70,3 +70,11 @@ const roadsImgSlider = new Swiper('.roads__img-slider', {
   }
 });
 // -----------------------------------------------------------------
+// --+++SLIDER LISTENERS+++--
+roadsTextSlider.on('slideNextTransitionStart', function () {
+  roadsImgSlider.slideNext();
+});
+
+roadsTextSlider.on('slidePrevTransitionStart', function () {
+  roadsImgSlider.slidePrev();
+});
