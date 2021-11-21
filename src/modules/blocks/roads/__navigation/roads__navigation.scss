@@ -1,0 +1,8 @@
+$className: 'roads__navigation';
+
+.#{$className} {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 120px;
+}
