@@ -1,9 +1,11 @@
 import '../pages/index.scss';
 // --+++Импорт Swiper+++--
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Autoplay, EffectFade } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 Swiper.use([Navigation]);
+Swiper.use([Autoplay]);
+Swiper.use([EffectFade]);
 
 // ******************************************************************
 // PROTOTYPE!--------------------------------------------------------
@@ -37,6 +39,33 @@ menu.addEventListener('click', evt => {
   }
 });
 
+// --+++ROADS IMG-SLIDER+++--
+const roadsImgSlider = new Swiper('.roads__image-slider', {
+  // Параметры
+  wrapperClass: 'roads__img-slider-wrapper',
+  slideClass: 'roads__img-slider-item',
+  slideActiveClass: 'roads__img-slider-item_active',
+  direction: 'horizontal',
+  loop: true,
+  speed: 350,
+  simulateTouch: false,
+  slidesPerView: 1,
+  spaceBetween: 40,
+  autoplay: {
+    delay: 2500
+  },
+  breakpoints: {
+    861: {
+      slidesPerView: 2
+    }
+  },
+  // Навигация
+  navigation: {
+    nextEl: '.roads__nav-btn_type_next',
+    prevEl: '.roads__nav-btn_type_prev'
+  }
+});
+
 // --+++ROADS TEXT-SLIDER+++--
 const roadsTextSlider = new Swiper('.roads__text-slider', {
   // Параметры
@@ -44,41 +73,25 @@ const roadsTextSlider = new Swiper('.roads__text-slider', {
   slideClass: 'roads__text-slider-item',
   direction: 'horizontal',
   loop: true,
-  speed: 500,
-  // allowTouchMove: false,
-  spaceBetween: 60,
-
-  // Навигация
-  navigation: {
-    nextEl: '.roads__nav-btn_type_next',
-    prevEl: '.roads__nav-btn_type_prev'
-  }
-});
-// -----------------------------------------------------------------
-// --+++ROADS IMG-SLIDER+++--
-const roadsImgSlider = new Swiper('.roads__img-slider', {
-  // Параметры
-  wrapperClass: 'roads__img-slider-wrapper',
-  slideClass: 'roads__img-slider-item',
-  direction: 'horizontal',
-  loop: true,
-  speed: 400,
-  // allowTouchMove: false,
-  slidesPerView: 2,
+  speed: 350,
+  allowTouchMove: false,
   spaceBetween: 40,
-
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
   // Навигация
   navigation: {
     nextEl: '.roads__nav-btn_type_next',
     prevEl: '.roads__nav-btn_type_prev'
   }
 });
-// -----------------------------------------------------------------
+
 // --+++SLIDER LISTENERS+++--
-roadsTextSlider.on('slideNextTransitionStart', function () {
-  roadsImgSlider.slideNext();
+roadsImgSlider.on('slideNextTransitionStart', function () {
+  roadsTextSlider[0].slideNext();
 });
 
-roadsTextSlider.on('slidePrevTransitionStart', function () {
-  roadsImgSlider.slidePrev();
+roadsImgSlider.on('slidePrevTransitionStart', function () {
+  roadsTextSlider[0].slidePrev();
 });

@@ -3,3 +3,7 @@ $className: 'roads__text';
 .#{$className} {
   margin-top: 50px;
 }
+
+@include breakPoint($className, $smallMobile) {
+  margin-top: 40px;
+}
