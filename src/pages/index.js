@@ -90,8 +90,10 @@ const roadsTextSlider = new Swiper('.roads__text-slider', {
 // --+++SLIDER LISTENERS+++--
 roadsImgSlider.on('slideNextTransitionStart', function () {
   roadsTextSlider[0].slideNext();
+  roadsTextSlider[1].slideNext();
 });
 
 roadsImgSlider.on('slidePrevTransitionStart', function () {
   roadsTextSlider[0].slidePrev();
+  roadsTextSlider[1].slideNext();
 });
