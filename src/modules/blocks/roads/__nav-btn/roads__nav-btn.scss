@@ -14,3 +14,8 @@ $className: 'roads__nav-btn';
     transform: scale(0.9);
   }
 }
+
+@include breakPoint($className, $smallMobile) {
+  width: 24px;
+  height: 24px;
+}

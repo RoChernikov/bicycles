@@ -64,9 +64,11 @@
 @import '../modules/blocks/roads/roads.scss';
 @import '../modules/blocks/roads/__title/roads__title.scss';
 @import '../modules/blocks/roads/__text-slider/roads__text-slider.scss';
+@import '../modules/blocks/roads/__text-slider/_type/roads__text-slider_type_text.scss';
+@import '../modules/blocks/roads/__text-slider/_type/roads__text-slider_type_title.scss';
 @import '../modules/blocks/roads/__text-slider-wrapper/roads__text-slider-wrapper.scss';
 @import '../modules/blocks/roads/__text-slider-item/roads__text-slider-item.scss';
-@import '../modules/blocks/roads/__img-slider/roads__img-slider.scss';
+@import '../modules/blocks/roads/__image-slider/roads__image-slider.scss';
 @import '../modules/blocks/roads/__img-slider-wrapper/roads__img-slider-wrapper.scss';
 @import '../modules/blocks/roads/__img-slider-item/roads__img-slider-item.scss';
 @import '../modules/blocks/roads/__text/roads__text.scss';

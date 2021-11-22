@@ -1,0 +1,17 @@
+$className: 'roads__image-slider';
+
+.#{$className} {
+  overflow: hidden;
+  margin-top: 80px;
+  width: calc(100% + 20px);
+}
+
+@include breakPoint($className, $mobile) {
+  width: 100%;
+  grid-row: 2/3;
+  grid-column: 1;
+}
+
+@include breakPoint($className, $smallMobile) {
+  margin-top: 40px;
+}

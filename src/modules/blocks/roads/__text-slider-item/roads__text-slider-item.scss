@@ -1,10 +1,6 @@
 $className: 'roads__text-slider-item';
 
 .#{$className} {
-  position: relative;
-  box-sizing: border-box;
-  width: 100%;
   flex-shrink: 0;
   width: 100%;
-  min-height: 702px;
 }
