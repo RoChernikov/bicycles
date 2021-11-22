@@ -17,11 +17,13 @@ const menu = document.querySelector('.menu');
 const openMenu = () => {
   burgerMenu.classList.add('header__nav_active');
   body.classList.add('page_hold');
+  burgerBtn.checked = true;
 };
 
 const closeMenu = () => {
   burgerMenu.classList.remove('header__nav_active');
   body.classList.remove('page_hold');
+  burgerBtn.checked = false;
 };
 
 function toggleMenu() {

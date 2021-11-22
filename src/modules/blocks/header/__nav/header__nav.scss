@@ -9,6 +9,7 @@ $className: 'header__nav';
   justify-content: space-between;
   background-color: $backgroundColor;
   position: fixed;
+  overflow: hidden;
   box-sizing: border-box;
   top: 0;
   left: 0;
