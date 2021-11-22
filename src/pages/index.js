@@ -95,5 +95,5 @@ roadsImgSlider.on('slideNextTransitionStart', function () {
 
 roadsImgSlider.on('slidePrevTransitionStart', function () {
   roadsTextSlider[0].slidePrev();
-  roadsTextSlider[1].slideNext();
+  roadsTextSlider[1].slidePrev();
 });
