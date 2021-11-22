@@ -2,5 +2,5 @@ $className: 'roads__text-slider-wrapper';
 
 .#{$className} {
   display: flex;
-  transform: translate(0);
+  position: relative;
 }
