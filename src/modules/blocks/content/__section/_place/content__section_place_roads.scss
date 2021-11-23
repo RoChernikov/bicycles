@@ -4,6 +4,7 @@ $className: 'content__section_place_roads';
   padding-top: 60px;
   padding-bottom: 60px;
   padding-right: 0;
+  overflow: hidden;
 }
 
 @include breakPoint($className, $mobile) {

@@ -41,6 +41,28 @@ menu.addEventListener('click', evt => {
   }
 });
 
+// --+++СКРОЛЛ, ДЕМОНСТРАЦИОННЫЙ КОД
+const headerLinks = Array.from(document.querySelectorAll('.header__link'));
+const workout = document.querySelector('.workout');
+const roads = document.querySelector('.roads');
+
+headerLinks[0].onclick = evt => {
+  evt.preventDefault();
+  roads.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth'
+  });
+};
+
+headerLinks[2].onclick = evt => {
+  evt.preventDefault();
+  workout.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth'
+  });
+};
+// -----------------------------------------------------------------
+
 // --+++ROADS IMG-SLIDER+++--
 const roadsImgSlider = new Swiper('.roads__image-slider', {
   // Параметры
@@ -54,7 +76,7 @@ const roadsImgSlider = new Swiper('.roads__image-slider', {
   slidesPerView: 1,
   spaceBetween: 40,
   autoplay: {
-    delay: 2500
+    delay: 1500
   },
   breakpoints: {
     861: {
