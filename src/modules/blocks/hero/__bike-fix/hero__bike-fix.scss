@@ -21,9 +21,9 @@ $className: 'hero__bike-fix';
 
 @include breakPoint($className, $mobile) {
   top: 110px;
-  width: 340px;
-  height: 260px;
-  padding: 25px 50px 15px;
+  width: 238px;
+  height: 182px;
+  padding: 18px 35px 11px;
 }
 
 @include breakPoint($className, $smallMobile) {
