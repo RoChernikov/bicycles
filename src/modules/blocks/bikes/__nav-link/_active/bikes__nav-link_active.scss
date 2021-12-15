@@ -1,0 +1,7 @@
+$className: 'bikes__nav-link_active';
+
+.#{$className} {
+  font-weight: $secondaryTitleFontWeight;
+  opacity: 1;
+  color: $secondaryFontColor;
+}

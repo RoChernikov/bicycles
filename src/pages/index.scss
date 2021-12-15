@@ -41,6 +41,7 @@
 @import '../modules/blocks/content/__section/_place/content__section_place_hero.scss';
 @import '../modules/blocks/content/__section/_place/content__section_place_quote.scss';
 @import '../modules/blocks/content/__section/_place/content__section_place_roads.scss';
+@import '../modules/blocks/content/__section/_place/content__section_place_bikes.scss';
 @import '../modules/blocks/content/__section/_place/content__section_place_workout.scss';
 //--+++hero+++--
 @import '../modules/blocks/hero/hero.scss';
@@ -81,6 +82,17 @@
 @import '../modules/blocks/roads/__nav-btn/roads__nav-btn.scss';
 @import '../modules/blocks/roads/__nav-btn/_type/roads__nav-btn_type_prev.scss';
 @import '../modules/blocks/roads/__nav-btn/_type/roads__nav-btn_type_next.scss';
+//--+++bikes+++--
+@import '../modules/blocks/bikes/__header/bikes__header.scss';
+@import '../modules/blocks/bikes/__title/bikes__title.scss';
+@import '../modules/blocks/bikes/__nav-list/bikes__nav-list.scss';
+@import '../modules/blocks/bikes/__nav-item/bikes__nav-item.scss';
+@import '../modules/blocks/bikes/__list/bikes__list.scss';
+@import '../modules/blocks/bikes/__item/bikes__item.scss';
+@import '../modules/blocks/bikes/__nav-link/bikes__nav-link.scss';
+@import '../modules/blocks/bikes/__nav-link/_active/bikes__nav-link_active.scss';
+@import '../modules/blocks/bikes/__image/bikes__image.scss';
+@import '../modules/blocks/bikes/__caption/bikes__caption.scss';
 //--+++workout+++--
 @import '../modules/blocks/workout/workout.scss';
 @import '../modules/blocks/workout/__title/workout__title.scss';

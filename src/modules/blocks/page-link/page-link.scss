@@ -4,6 +4,7 @@ $className: 'page-link';
   text-decoration: none;
   color: $secondaryFontColor;
   transition: all 0.2s;
+  cursor: pointer;
 
   &:hover {
     opacity: 75%;
