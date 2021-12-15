@@ -1,0 +1,9 @@
+$className: 'bikes__caption';
+
+.#{$className} {
+  font-size: $primaryFontSize;
+  font-weight: $secondaryTitleFontWeight;
+  line-height: 1.2;
+  margin-top: 22px;
+  margin-left: 6px;
+}
