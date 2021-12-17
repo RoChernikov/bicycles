@@ -1,3 +1,4 @@
+const { log } = console;
 import '../pages/index.scss';
 // --+++Импорт Swiper+++--
 import Swiper, { Navigation, Autoplay, EffectFade } from 'swiper';
@@ -147,3 +148,34 @@ const generateCards = cardData => {
   cardData.forEach(card => addBikeCard(card));
 };
 generateCards(highwayBikes);
+
+// -----------------------------------------------------------------
+// --+++Переключение табов+++--
+const bikeTabs = document.querySelectorAll('.bikes__nav-link');
+
+const renderBikesCards = data => {
+  bikeCardsContainer.innerHTML = '';
+  generateCards(data);
+};
+
+bikeTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const tabId = tab.getAttribute('dataId');
+    bikeTabs.forEach(tab => tab.classList.remove('bikes__nav-link_active'));
+    tab.classList.add('bikes__nav-link_active');
+
+    switch (tabId) {
+      case 'highway':
+        renderBikesCards(highwayBikes);
+        break;
+
+      case 'gravel':
+        renderBikesCards(gravelBikes);
+        break;
+
+      case 'tt':
+        renderBikesCards(ttBikes);
+        break;
+    }
+  });
+});
