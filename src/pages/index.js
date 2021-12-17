@@ -121,3 +121,29 @@ roadsImgSlider.on('slidePrevTransitionStart', function () {
   roadsTextSlider[0].slidePrev();
   roadsTextSlider[1].slidePrev();
 });
+
+// -----------------------------------------------------------------
+import bikeCards from '../components/initial-cards';
+const highwayBikes = bikeCards.filter(card => card.type === 'highway');
+const gravelBikes = bikeCards.filter(card => card.type === 'gravel');
+const ttBikes = bikeCards.filter(card => card.type === 'tt');
+const bikeCardTemplate = document.querySelector('#bike-card-template').content;
+const bikeCardsContainer = document.querySelector('.bikes__list');
+
+// --+++Создание карточки+++--
+const createBikeCard = data => {
+  const card = bikeCardTemplate.querySelector('.bikes__item').cloneNode(true);
+  card.querySelector('.bikes__image').src = `${data.image}`;
+  card.querySelector('.bikes__caption').textContent = `${data.caption}`;
+  return card;
+};
+
+// --+++Добавление карточки+++--
+const addBikeCard = data => bikeCardsContainer.append(createBikeCard(data));
+
+// --+++Заполнение карточками+++--
+
+const generateCards = cardData => {
+  cardData.forEach(card => addBikeCard(card));
+};
+generateCards(highwayBikes);
