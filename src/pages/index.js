@@ -9,7 +9,7 @@ Swiper.use([Autoplay]);
 Swiper.use([EffectFade]);
 
 // ******************************************************************
-// PROTOTYPE!--------------------------------------------------------
+// PROTOTYPE!------------------------------------ДЕМОНСТРАЦИОННЫЙ КОД
 const burgerBtn = document.querySelector('.header__burger');
 const burgerMenu = document.querySelector('.header__nav');
 const body = document.querySelector('.page');
@@ -42,7 +42,8 @@ menu.addEventListener('click', evt => {
   }
 });
 
-// --+++СКРОЛЛ, ДЕМОНСТРАЦИОННЫЙ КОД
+// ******************************************************************
+// PROTOTYPE!----------------------------СКРОЛЛ, ДЕМОНСТРАЦИОННЫЙ КОД
 const headerLinks = Array.from(document.querySelectorAll('.header__link'));
 const workout = document.querySelector('.workout');
 const roads = document.querySelector('.roads');
