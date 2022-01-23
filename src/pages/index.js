@@ -1,5 +1,6 @@
 const { log } = console;
 import '../pages/index.scss';
+import smoothscroll from 'smoothscroll-polyfill';
 // --+++Импорт Swiper+++--
 import Swiper, { Navigation, Autoplay, EffectFade } from 'swiper';
 import 'swiper/css';
@@ -10,6 +11,7 @@ Swiper.use([EffectFade]);
 
 // ******************************************************************
 // PROTOTYPE!------------------------------------ДЕМОНСТРАЦИОННЫЙ КОД
+smoothscroll.polyfill();
 const burgerBtn = document.querySelector('.header__burger');
 const burgerMenu = document.querySelector('.header__nav');
 const body = document.querySelector('.page');
