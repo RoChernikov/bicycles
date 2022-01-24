@@ -1,9 +1,22 @@
 $className: 'hero__pointer';
 
 .#{$className} {
-  display: flex;
-  align-items: center;
   margin-top: 169px;
+  font-size: $primaryFontSize;
+  line-height: 1;
+  color: $secondaryFontColor;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    margin: 0;
+    width: 132px;
+    height: 2px;
+    left: 224px;
+    top: 8px;
+    background: #d7d4d4;
+  }
 }
 
 @include breakPoint($className, $smallDesktop) {

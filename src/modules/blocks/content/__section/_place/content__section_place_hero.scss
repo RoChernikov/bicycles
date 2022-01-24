@@ -3,6 +3,7 @@ $className: 'content__section_place_hero';
 .#{$className} {
   padding-top: 20px;
   padding-left: 120px;
+  padding-right: 0;
 }
 
 @include breakPoint($className, $smallDesktop) {
