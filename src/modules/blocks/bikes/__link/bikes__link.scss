@@ -1,0 +1,5 @@
+$className: 'bikes__link';
+
+@include breakPoint($className, $mobile) {
+  display: grid;
+}

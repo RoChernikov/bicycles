@@ -12,3 +12,9 @@ $className: 'bikes__nav-link';
     opacity: 0.6;
   }
 }
+
+@include breakPoint($className, 650px) {
+  font-size: $primaryFontSizeMobile;
+  line-height: $primaryLineHeightMobile;
+  font-weight: $primaryFontWeight;
+}

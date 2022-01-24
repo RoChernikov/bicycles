@@ -139,6 +139,7 @@ const createBikeCard = data => {
   const card = bikeCardTemplate.querySelector('.bikes__item').cloneNode(true);
   card.querySelector('.bikes__image').src = `${data.image}`;
   card.querySelector('.bikes__caption').textContent = `${data.caption}`;
+  card.querySelector('.bikes__link').href = `${data.link}`;
   return card;
 };
 
