@@ -154,8 +154,7 @@
           <div class="roads__nav-btn roads__nav-btn_type_next"></div>
         </div>
       </section>
-      <!--НЕ ГОТОВ АДАПТИВ-->
-      <!-- <section class="bikes content__section content__section_place_bikes">
+      <section class="bikes content__section content__section_place_bikes">
         <div class="bikes__header">
           <h2 class="content__title bikes__title page-text">Велосипеды</h2>
           <nav>
@@ -177,10 +176,11 @@
           </nav>
         </div>
 
-        <ul class="bikes__list page-list">
-
-        </ul>
-      </section> -->
+        <ul class="bikes__list page-list"></ul>
+        <div class="bikes__slider">
+          <h1>ЗДЕСЬ БУДЕТ СЛАЙДЕР</h1>
+        </div>
+      </section>
       <section class="workout content__section content__section_place_workout">
         <h2 class="content__title workout__title page-text">Тренировки</h2>
         <p class="content__text workout__text page-text">
@@ -238,8 +238,10 @@
     <!-- Шаблон карточки с велосипедом -->
     <template id="bike-card-template">
       <li class="bikes__item">
-        <img class="bikes__image" />
-        <p class="bikes__caption page-text"></p>
+        <a class="page-link bikes__link" target="_blank">
+          <img class="bikes__image" />
+          <p class="bikes__caption page-text"></p>
+        </a>
       </li>
     </template>
   </body>

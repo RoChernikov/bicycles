@@ -7,3 +7,16 @@ $className: 'bikes__caption';
   margin-top: 22px;
   margin-left: 6px;
 }
+
+@include breakPoint($className, $mobile) {
+  grid-row: 1;
+  grid-column: 1;
+  align-self: end;
+  text-align: center;
+  padding: 16px;
+  font-size: $secondaryNavFontSize;
+  line-height: $secondaryNavLineHeight;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

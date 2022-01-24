@@ -1,6 +1,6 @@
 $className: 'bikes__item';
 
 .#{$className} {
-  width: 380px;
+  max-width: 380px;
   cursor: pointer;
 }
