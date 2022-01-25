@@ -1,0 +1,31 @@
+$className: 'footer__input';
+
+.#{$className} {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #efefef;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  padding-left: 19px;
+  padding-right: 60px;
+  font-family: $primaryFontFamily;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 2;
+  color: $secondaryFontColor;
+
+  &::placeholder {
+    color: $primaryFontColor;
+    opacity: 70%;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus::placeholder {
+    color: $secondaryFontColor;
+    opacity: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+$className: 'roads__nav-btn';
+
+.#{$className} {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+@include breakPoint($className, $smallMobile) {
+  width: 24px;
+  height: 24px;
+}

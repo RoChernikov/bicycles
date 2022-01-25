@@ -1,0 +1,15 @@
+$className: 'hero__title';
+
+.#{$className} {
+  max-width: 460px;
+  margin-top: 63px;
+}
+
+@include breakPoint($className, $smallTablet) {
+  max-width: 400px;
+}
+
+@include breakPoint($className, $mobile) {
+  max-width: 100%;
+  margin-top: 40px;
+}

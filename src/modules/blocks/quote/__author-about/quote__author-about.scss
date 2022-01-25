@@ -1,0 +1,22 @@
+$className: 'quote__author-about';
+
+.#{$className} {
+  font-family: $primaryFontFamily;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: $primaryFontWeight;
+  color: $primaryFontColor;
+  opacity: 70%;
+  grid-column: 2;
+  margin-top: 6px;
+}
+
+@include breakPoint($className, $mobile) {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+@include breakPoint($className, $smallMobile) {
+  font-size: 10px;
+  margin-top: 2px;
+}

@@ -1,0 +1,5 @@
+$className: 'page_hold';
+
+@include breakPoint($className, $smallMobile) {
+  overflow: hidden;
+}

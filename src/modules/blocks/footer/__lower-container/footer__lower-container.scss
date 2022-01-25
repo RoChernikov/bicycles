@@ -1,0 +1,15 @@
+$className: 'footer__lower-container';
+
+.#{$className} {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 86px;
+  margin-bottom: 60px;
+}
+
+@include breakPoint($className, $smallMobile) {
+  margin-top: 90px;
+  margin-bottom: 16px;
+  align-items: center;
+}

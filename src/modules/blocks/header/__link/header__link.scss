@@ -1,0 +1,12 @@
+$className: 'header__link';
+
+.#{$className} {
+  font-size: $secondaryNavFontSize;
+  line-height: $secondaryNavLineHeight;
+  font-weight: 500;
+}
+
+@include breakPoint($className, $smallMobile) {
+  font-size: $primaryFontSize;
+  line-height: 1;
+}

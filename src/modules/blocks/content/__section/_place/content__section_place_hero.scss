@@ -1,0 +1,26 @@
+$className: 'content__section_place_hero';
+
+.#{$className} {
+  padding-top: 20px;
+  padding-left: 120px;
+  padding-right: 0;
+}
+
+@include breakPoint($className, $smallDesktop) {
+  padding-left: 90px;
+}
+
+@include breakPoint($className, $tablet) {
+  padding-left: 60px;
+}
+
+@include breakPoint($className, $mobile) {
+  padding-top: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@include breakPoint($className, $smallMobile) {
+  padding-left: 18px;
+  padding-right: 18px;
+}

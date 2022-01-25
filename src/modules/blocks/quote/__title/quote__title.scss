@@ -1,0 +1,26 @@
+$className: 'quote__title';
+
+.#{$className} {
+  font-family: $primaryFontFamily;
+  font-size: $secondaryTitleFontSize;
+  line-height: $secondaryTitleLineHeight;
+  font-weight: $secondaryTitleFontWeight;
+  color: $secondaryFontColor;
+  grid-column: 2;
+  max-width: 470px;
+  letter-spacing: -0.5px;
+}
+
+@include breakPoint($className, $tablet) {
+  font-size: 29px;
+}
+
+@include breakPoint($className, $mobile) {
+  margin-top: 43px;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+@include breakPoint($className, $smallMobile) {
+  font-size: 23px;
+}

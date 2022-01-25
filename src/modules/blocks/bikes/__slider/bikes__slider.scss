@@ -1,0 +1,11 @@
+$className: 'bikes__slider';
+
+.#{$className} {
+  display: none;
+  overflow: hidden;
+  padding: 20px 18px;
+}
+
+@include breakPoint($className, $smallMobile) {
+  display: flex;
+}

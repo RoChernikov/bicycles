@@ -1,0 +1,6 @@
+$className: 'roads__text-slider_type_text';
+
+@include breakPoint($className, $mobile) {
+  grid-row: 3/4;
+  grid-column: 1;
+}

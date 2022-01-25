@@ -1,0 +1,21 @@
+$className: 'roads__navigation';
+
+.#{$className} {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 120px;
+  z-index: 5;
+}
+
+@include breakPoint($className, $mobile) {
+  margin-top: 0;
+  grid-row: 1/2;
+  grid-column: 1;
+  justify-self: flex-end;
+  align-self: center;
+}
+
+@include breakPoint($className, $smallMobile) {
+  width: 58px;
+}

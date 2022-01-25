@@ -1,0 +1,11 @@
+$className: 'theme-switch__switcher';
+
+.#{$className} {
+  appearance: none;
+  position: absolute;
+  top: 0;
+
+  &:checked + .theme-switch__slider::after {
+    margin-left: 20px;
+  }
+}

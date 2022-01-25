@@ -1,0 +1,11 @@
+$className: 'roads__nav-btn_type_prev';
+
+.#{$className} {
+  background: center / 20% no-repeat url(../images/prev-btn-icon.svg), #ebebeb;
+  background-position: 18px;
+}
+
+@include breakPoint($className, $smallMobile) {
+  background-position: 8px;
+  background-size: 25%;
+}

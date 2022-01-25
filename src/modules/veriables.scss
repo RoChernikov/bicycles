@@ -1,0 +1,41 @@
+//шрифты
+$primaryFontFamily: 'Inter', Arial, sans-serif;
+
+//цвета
+$backgroundColor: #f4f4f4;
+$primaryFontColor: #222;
+$secondaryFontColor: #151515;
+$btnColor: #24b47e;
+$hoveredBtnColor: #319e75;
+
+// Размеры
+$primaryTitleFontSize: 55px;
+$primaryTitleFontSizeTablet: 40px;
+$primaryTitleFontSizeSmallTablet: 36px;
+$primaryTitleFontSizeSmallMobile: 32px;
+
+$primaryTitleLineHeight: 1.1;
+$primaryTitleLineHeightSmallMobile: 1.25;
+
+$primaryTitleFontWeight: 700;
+
+$secondaryTitleFontSize: 34px;
+$secondaryTitleLineHeight: 1.3;
+$secondaryTitleFontWeight: 600;
+
+$primaryFontSize: 18px;
+$primaryFontSizeMobile: 12px;
+
+$primaryLineHeight: 1.55;
+$primaryLineHeightMobile: 1.5;
+
+$primaryFontWeight: 400;
+$secondaryFontWeight: 500;
+$secondaryNavFontSize: 14px;
+$secondaryNavLineHeight: 1.3;
+// Разрешения
+$smallDesktop: 1200px;
+$tablet: 1023px;
+$smallTablet: 949px;
+$mobile: 860px;
+$smallMobile: 580px;

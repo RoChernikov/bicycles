@@ -1,0 +1,8 @@
+$className: 'theme-switch';
+
+.#{$className} {
+  position: relative;
+  width: 135px;
+  display: flex;
+  justify-content: space-between;
+}

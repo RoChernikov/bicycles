@@ -1,0 +1,34 @@
+$className: 'hero__bike-fix';
+
+.#{$className} {
+  border-radius: 20px;
+  box-sizing: content-box;
+  padding: 25px 50px 15px;
+  background-color: $backgroundColor;
+  width: 340px;
+  height: 260px;
+  object-fit: cover;
+  position: sticky;
+  top: 110px;
+  box-shadow: -20px 60px 220px 0px rgba(0, 0, 0, 0.2);
+}
+
+@include breakPoint($className, 1100px) {
+  width: 272px;
+  height: 208px;
+  padding: 20px 40px 12px;
+}
+
+@include breakPoint($className, $mobile) {
+  top: 110px;
+  width: 238px;
+  height: 182px;
+  padding: 18px 35px 11px;
+}
+
+@include breakPoint($className, $smallMobile) {
+  top: 10px;
+  width: 181px;
+  height: 139px;
+  padding: 11px 27px 11px;
+}
