@@ -47,11 +47,20 @@ menu.addEventListener('click', evt => {
 // PROTOTYPE!----------------------------СКРОЛЛ, ДЕМОНСТРАЦИОННЫЙ КОД
 const headerLinks = Array.from(document.querySelectorAll('.header__link'));
 const workout = document.querySelector('.workout');
+const bikes = document.querySelector('.bikes');
 const roads = document.querySelector('.roads');
 
 headerLinks[0].onclick = evt => {
   evt.preventDefault();
   roads.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth'
+  });
+};
+
+headerLinks[1].onclick = evt => {
+  evt.preventDefault();
+  bikes.scrollIntoView({
     block: 'start',
     behavior: 'smooth'
   });
