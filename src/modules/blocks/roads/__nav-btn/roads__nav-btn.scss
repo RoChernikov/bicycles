@@ -1,10 +1,12 @@
 $className: 'roads__nav-btn';
 
 .#{$className} {
+  position: relative;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   transition: all 0.2s;
+  background-color: #ebebeb;
 
   &:hover {
     opacity: 60%;
