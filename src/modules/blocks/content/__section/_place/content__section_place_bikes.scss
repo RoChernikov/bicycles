@@ -4,3 +4,7 @@ $className: 'content__section_place_bikes';
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+@include breakPoint($className, $smallMobile) {
+  padding: 40px 0px 80px;
+}

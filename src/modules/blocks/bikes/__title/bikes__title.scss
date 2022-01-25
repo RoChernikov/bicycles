@@ -2,3 +2,7 @@ $className: 'bikes__title';
 
 .#{$className} {
 }
+
+@include breakPoint($className, $smallMobile) {
+  margin-left: 18px;
+}

@@ -1,10 +1,10 @@
-$className: 'bikes__slider';
+$className: 'bikes__pagination';
 
 .#{$className} {
   display: none;
-  margin-top: 70px;
-  overflow: hidden;
-  padding: 20px 18px;
+  justify-content: center;
+  transition: 300ms opacity;
+  z-index: 10;
 }
 
 @include breakPoint($className, $smallMobile) {

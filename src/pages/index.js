@@ -2,12 +2,11 @@ const { log } = console;
 import '../pages/index.scss';
 import smoothscroll from 'smoothscroll-polyfill';
 // --+++Импорт Swiper+++--
-import Swiper, { Navigation, Autoplay, EffectFade } from 'swiper';
+import Swiper, { Navigation, Autoplay, EffectFade, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
-Swiper.use([Navigation]);
-Swiper.use([Autoplay]);
-Swiper.use([EffectFade]);
+import 'swiper/css/pagination';
+Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
 
 // ******************************************************************
 // PROTOTYPE!------------------------------------ДЕМОНСТРАЦИОННЫЙ КОД
@@ -124,6 +123,26 @@ roadsImgSlider.on('slideNextTransitionStart', function () {
 roadsImgSlider.on('slidePrevTransitionStart', function () {
   roadsTextSlider[0].slidePrev();
   roadsTextSlider[1].slidePrev();
+});
+
+// --+++BIKES-SLIDER+++--
+const bikesSlider = new Swiper('.bikes__slider', {
+  // Параметры
+  wrapperClass: 'bikes__slider-wrapper',
+  slideClass: 'bikes__slider-item',
+  direction: 'horizontal',
+  loop: false,
+  speed: 350,
+  simulateTouch: true,
+  slidesPerView: 1,
+  spaceBetween: 40,
+  // Пагинация
+  pagination: {
+    el: '.bikes__pagination',
+    bulletClass: 'bikes__bullet',
+    bulletActiveClass: 'bikes__bullet_active',
+    clickable: false
+  }
 });
 
 // -----------------------------------------------------------------
