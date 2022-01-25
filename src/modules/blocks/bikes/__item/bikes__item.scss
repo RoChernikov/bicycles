@@ -4,3 +4,7 @@ $className: 'bikes__item';
   max-width: 380px;
   cursor: pointer;
 }
+
+@include breakPoint($className, $smallMobile) {
+  max-width: 100%;
+}

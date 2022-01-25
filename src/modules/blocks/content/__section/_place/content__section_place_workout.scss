@@ -5,7 +5,7 @@ $className: 'content__section_place_workout';
   padding-bottom: 120px;
 }
 
-@include breakPoint($className, $mobile) {
+@include breakPoint($className, $tablet) {
   padding-top: 60px;
   padding-bottom: 80px;
 }
