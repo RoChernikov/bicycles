@@ -7,7 +7,7 @@ $className: 'hero__sticky-container';
   grid-row: 1/6;
   height: 100%;
   box-sizing: border-box;
-  padding: 372px 0 79px 0;
+  padding-bottom: 79px;
 }
 
 @include breakPoint($className, 1300px) {
@@ -40,5 +40,5 @@ $className: 'hero__sticky-container';
 }
 
 @include breakPoint($className, $smallMobile) {
-  padding: 191px 0 10px 0;
+  padding: 190px 0 10px 0;
 }
