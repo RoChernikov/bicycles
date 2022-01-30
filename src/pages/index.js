@@ -44,11 +44,23 @@ menu.addEventListener('click', evt => {
 });
 
 // ******************************************************************
+// PROTOTYPE!----------------------------INPUT, ДЕМОНСТРАЦИОННЫЙ КОД
+const footerInput = document.querySelector('.footer__input');
+footerInput.addEventListener('focus', () => {
+  footerInput.setAttribute('placeholder', '');
+});
+
+footerInput.addEventListener('blur', () => {
+  footerInput.setAttribute('placeholder', 'Ваш e-mail');
+});
+
+// ******************************************************************
 // PROTOTYPE!----------------------------СКРОЛЛ, ДЕМОНСТРАЦИОННЫЙ КОД
 const headerLinks = Array.from(document.querySelectorAll('.header__link'));
 const workout = document.querySelector('.workout');
 const bikes = document.querySelector('.bikes');
 const roads = document.querySelector('.roads');
+const heroButton = document.querySelector('.hero__button');
 
 headerLinks[0].onclick = evt => {
   evt.preventDefault();
@@ -69,6 +81,14 @@ headerLinks[1].onclick = evt => {
 headerLinks[2].onclick = evt => {
   evt.preventDefault();
   workout.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth'
+  });
+};
+
+heroButton.onclick = evt => {
+  evt.preventDefault();
+  roads.scrollIntoView({
     block: 'start',
     behavior: 'smooth'
   });
