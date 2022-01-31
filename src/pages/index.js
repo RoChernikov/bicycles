@@ -44,11 +44,23 @@ menu.addEventListener('click', evt => {
 });
 
 // ******************************************************************
+// PROTOTYPE!----------------------------INPUT, ДЕМОНСТРАЦИОННЫЙ КОД
+const footerInput = document.querySelector('.footer__input');
+footerInput.addEventListener('focus', () => {
+  footerInput.setAttribute('placeholder', '');
+});
+
+footerInput.addEventListener('blur', () => {
+  footerInput.setAttribute('placeholder', 'Ваш e-mail');
+});
+
+// ******************************************************************
 // PROTOTYPE!----------------------------СКРОЛЛ, ДЕМОНСТРАЦИОННЫЙ КОД
 const headerLinks = Array.from(document.querySelectorAll('.header__link'));
 const workout = document.querySelector('.workout');
 const bikes = document.querySelector('.bikes');
 const roads = document.querySelector('.roads');
+const heroButton = document.querySelector('.hero__button');
 
 headerLinks[0].onclick = evt => {
   evt.preventDefault();
@@ -69,6 +81,14 @@ headerLinks[1].onclick = evt => {
 headerLinks[2].onclick = evt => {
   evt.preventDefault();
   workout.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth'
+  });
+};
+
+heroButton.onclick = evt => {
+  evt.preventDefault();
+  roads.scrollIntoView({
     block: 'start',
     behavior: 'smooth'
   });
@@ -154,13 +174,15 @@ const bikesSlider = new Swiper('.bikes__slider', {
   }
 });
 
-// -----------------------------------------------------------------
+// ******************************************************************
+// PROTOTYPE!----------------------------КАРТОЧКИ, ДЕМОНСТРАЦИОННЫЙ КОД
 import bikeCards from '../components/initial-cards';
 const highwayBikes = bikeCards.filter(card => card.type === 'highway');
 const gravelBikes = bikeCards.filter(card => card.type === 'gravel');
 const ttBikes = bikeCards.filter(card => card.type === 'tt');
 const bikeCardTemplate = document.querySelector('#bike-card-template').content;
 const bikeCardsContainer = document.querySelector('.bikes__list');
+const bikeSliderContainer = document.querySelector('.bikes__slider-wrapper');
 
 // --+++Создание карточки+++--
 const createBikeCard = data => {
@@ -171,8 +193,19 @@ const createBikeCard = data => {
   return card;
 };
 
+const createBikeSliderCard = data => {
+  const card = bikeCardTemplate.querySelector('.bikes__item').cloneNode(true);
+  card.classList = 'bikes__slider-item bikes__item';
+  card.querySelector('.bikes__image').src = `${data.image}`;
+  card.querySelector('.bikes__caption').textContent = `${data.caption}`;
+  card.querySelector('.bikes__link').href = `${data.link}`;
+  return card;
+};
+
 // --+++Добавление карточки+++--
 const addBikeCard = data => bikeCardsContainer.append(createBikeCard(data));
+const addBikeSliderCard = data =>
+  bikeSliderContainer.append(createBikeSliderCard(data));
 
 // --+++Заполнение карточками+++--
 
@@ -181,13 +214,24 @@ const generateCards = cardData => {
 };
 generateCards(highwayBikes);
 
+const generateSliderCards = cardData => {
+  cardData.forEach(card => addBikeSliderCard(card));
+};
+generateSliderCards(highwayBikes);
+
 // -----------------------------------------------------------------
 // --+++Переключение табов+++--
 const bikeTabs = document.querySelectorAll('.bikes__nav-link');
+const bikeSelector = document.querySelector('.bikes__selector');
 
 const renderBikesCards = data => {
   bikeCardsContainer.innerHTML = '';
   generateCards(data);
+};
+
+const renderBikesSliderCards = data => {
+  bikeSliderContainer.innerHTML = '';
+  generateSliderCards(data);
 };
 
 bikeTabs.forEach(tab => {
@@ -199,15 +243,55 @@ bikeTabs.forEach(tab => {
     switch (tabId) {
       case 'highway':
         renderBikesCards(highwayBikes);
+        bikeSelector.value = 'Шоссе';
+        renderBikesSliderCards(highwayBikes);
         break;
 
       case 'gravel':
         renderBikesCards(gravelBikes);
+        bikeSelector.value = 'Грэвел';
+        renderBikesSliderCards(gravelBikes);
         break;
 
       case 'tt':
         renderBikesCards(ttBikes);
+        bikeSelector.value = 'ТТ';
+        renderBikesSliderCards(ttBikes);
         break;
     }
   });
+});
+
+bikeSelector.addEventListener('input', () => {
+  const value = bikeSelector.value;
+  const switchTab = tabId => {
+    bikeTabs.forEach(tab => tab.classList.remove('bikes__nav-link_active'));
+    bikeTabs.forEach(tab => {
+      if (tab.getAttribute('dataId') === tabId) {
+        tab.classList.add('bikes__nav-link_active');
+      }
+    });
+  };
+  switch (value) {
+    case 'Шоссе':
+      renderBikesSliderCards(highwayBikes);
+      renderBikesCards(highwayBikes);
+      bikesSlider.itit();
+      switchTab('highway');
+      break;
+
+    case 'Грэвел':
+      renderBikesSliderCards(gravelBikes);
+      renderBikesCards(gravelBikes);
+      bikesSlider.itit();
+      switchTab('gravel');
+      break;
+
+    case 'ТТ':
+      renderBikesSliderCards(ttBikes);
+      renderBikesCards(ttBikes);
+      bikesSlider.itit();
+      switchTab('tt');
+      break;
+  }
 });
