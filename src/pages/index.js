@@ -276,21 +276,18 @@ bikeSelector.addEventListener('input', () => {
     case 'Шоссе':
       renderBikesSliderCards(highwayBikes);
       renderBikesCards(highwayBikes);
-      bikesSlider.itit();
       switchTab('highway');
       break;
 
     case 'Грэвел':
       renderBikesSliderCards(gravelBikes);
       renderBikesCards(gravelBikes);
-      bikesSlider.itit();
       switchTab('gravel');
       break;
 
     case 'ТТ':
       renderBikesSliderCards(ttBikes);
       renderBikesCards(ttBikes);
-      bikesSlider.itit();
       switchTab('tt');
       break;
   }
