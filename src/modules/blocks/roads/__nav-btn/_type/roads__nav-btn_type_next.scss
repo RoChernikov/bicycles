@@ -11,7 +11,7 @@ $className: 'roads__nav-btn_type_next';
     height: 10px;
     border-top: 2px solid;
     border-right: 2px solid;
-    border-color: rgba(21, 21, 21, 1);
+    border-color: var(--var-btn-ico-color);
     transform: rotate(45deg);
   }
 }

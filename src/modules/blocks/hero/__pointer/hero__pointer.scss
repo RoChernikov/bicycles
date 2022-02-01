@@ -4,7 +4,7 @@ $className: 'hero__pointer';
   margin-top: 169px;
   font-size: $primaryFontSize;
   line-height: 1;
-  color: $secondaryFontColor;
+  color: var(--var-secondary-font-color);
   position: relative;
 
   &::after {

@@ -13,7 +13,7 @@ $className: 'theme-switch__slider';
     left: 0;
     width: 44px;
     height: 24px;
-    background-color: #fff;
+    background-color: var(--var-theme-switch-bg-color);
     border-radius: 15px;
   }
 

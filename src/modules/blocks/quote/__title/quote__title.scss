@@ -5,7 +5,7 @@ $className: 'quote__title';
   font-size: $secondaryTitleFontSize;
   line-height: $secondaryTitleLineHeight;
   font-weight: $secondaryTitleFontWeight;
-  color: $secondaryFontColor;
+  color: var(--var-secondary-font-color);
   grid-column: 2;
   max-width: 470px;
   letter-spacing: -0.5px;

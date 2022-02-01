@@ -5,7 +5,7 @@ $className: 'quote__author';
   font-size: 20px;
   line-height: 1.6;
   font-weight: $secondaryFontWeight;
-  color: $secondaryFontColor;
+  color: var(--var-secondary-font-color);
   grid-column: 2;
   margin-top: 257px;
 }

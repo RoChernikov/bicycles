@@ -7,7 +7,8 @@ $className: 'header';
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $backgroundColor;
+  background-color: var(--var-bg-color);
   z-index: 100;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  transition: $animationSpeed;
 }

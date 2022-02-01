@@ -8,10 +8,11 @@ $className: 'page';
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   font-family: $primaryFontFamily;
-  color: $primaryFontColor;
-  background-color: $backgroundColor;
+  color: var(--var-primari-font-color);
+  background-color: var(--var-bg-color);
   min-width: 320px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  transition: $animationSpeed;
 }

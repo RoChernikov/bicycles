@@ -1,8 +1,6 @@
-$className: 'theme-switch__ico';
-
-.#{$className} {
+.theme-switch__ico {
   background-repeat: no-repeat;
   background-size: contain;
   align-self: center;
   opacity: var(--var-theme-switch-opacity);
-}
+}/*# sourceMappingURL=theme-switch__ico.css.map */
