@@ -1,4 +1,4 @@
-<h1 align="center"><a  href="http://rochernikov.github.io/bicycles/" target="_blank"><img src="./readme_src/bicycles_header.png" width="100%" alt="Шапка"></a></h1>
+<h1 align="center"><a  href="http://rochernikov.github.io/bicycles/" target="_blank"><img src="./readme_src/bicycles_header.gif width="100%" alt="Шапка"></a></h1>
 
 ## Краткое описание:
 

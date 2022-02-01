@@ -301,12 +301,6 @@ let preferThemeColor = window.matchMedia(
 const footerThemeSwitch = document.querySelector('#footer-switcher');
 const headerThemeSwitch = document.querySelector('#header-switcher');
 
-const checkTheme = isDark => {
-  if (isDark) {
-    document.body.setAttribute('dark', '');
-  }
-};
-
 const setThemeSwitcher = isDark => {
   if (isDark) {
     footerThemeSwitch.setAttribute('checked', '');
