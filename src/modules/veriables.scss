@@ -6,11 +6,13 @@
   --var-footer-bg-color: #efefef;
   --var-input-border-color: #c7c7c7;
   --var-theme-switch-opacity: 100%;
+  --var-logo-opacity: 100%;
   --var-theme-switch-bg-color: #fff;
   --var-copyright-color: #cfcfcf;
   --var--nav-btn-color: #ebebeb;
   --var-btn-ico-color: #151515;
   --var-selector-border-color: #e3e3e3;
+  --var-header-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 [dark] {
@@ -20,11 +22,13 @@
   --var-footer-bg-color: #2f2f2f;
   --var-input-border-color: #7d7d7d;
   --var-theme-switch-opacity: 35%;
+  --var-logo-opacity: 50%;
   --var-theme-switch-bg-color: #545454;
   --var-copyright-color: #565656;
   --var--nav-btn-color: #434343;
   --var-btn-ico-color: #fff;
   --var-selector-border-color: #7d7d7d;
+  --var-header-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.4);
 }
 
 $animationSpeed: all 0.3s ease;

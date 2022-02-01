@@ -5,24 +5,24 @@ $className: 'header__burger-elements';
   width: 22px;
   height: 3px;
   background-color: var(--var-btn-ico-color);
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
-  transition: transform 0.1s;
   position: absolute;
   top: 50%;
   right: 18px;
   transform: translateY(-4px);
+  transition: all 0.1s;
 
   &:before {
     content: '';
     width: 22px;
     height: 3px;
-    background: var(--var-btn-ico-color);
     background-color: transparent;
     height: 16px;
     border-top: 3px solid var(--var-btn-ico-color);
     position: absolute;
     transform: translateY(-8px);
-    transition: 0.4s;
+    transition: transform 0.4s, border-color 0.1s;
   }
   &:after {
     content: '';
@@ -31,7 +31,7 @@ $className: 'header__burger-elements';
     background-color: var(--var-btn-ico-color);
     position: absolute;
     transform: translateY(8px);
-    transition: 0.4s;
+    transition: transform 0.4s, background-color 0.1s;
   }
 }
 

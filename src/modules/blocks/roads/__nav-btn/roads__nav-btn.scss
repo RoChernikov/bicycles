@@ -7,6 +7,7 @@ $className: 'roads__nav-btn';
   border-radius: 50%;
   transition: all 0.2s;
   background-color: var(--var--nav-btn-color);
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
     opacity: 60%;

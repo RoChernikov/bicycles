@@ -15,7 +15,7 @@ $className: 'content__section';
 
 @include breakPoint($className, $mobile) {
   padding: 60px 30px 80px;
-  border-top: 1px solid #e3e3e3;
+  border-top: 1px solid var(--var-selector-border-color);
 }
 
 @include breakPoint($className, $smallMobile) {
