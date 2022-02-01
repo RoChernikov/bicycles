@@ -15,6 +15,7 @@ $className: 'content__section_place_hero';
 }
 
 @include breakPoint($className, $mobile) {
+  border-top: none;
   padding-top: 0;
   padding-left: 30px;
   padding-right: 30px;

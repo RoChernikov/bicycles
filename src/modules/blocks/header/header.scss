@@ -9,6 +9,6 @@ $className: 'header';
   width: 100%;
   background-color: var(--var-bg-color);
   z-index: 100;
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: var(--var-header-shadow);
   transition: $animationSpeed;
 }
