@@ -9,7 +9,7 @@
 ### Функционал:
 
 - Слайдеры с велосипедами и дорожными покрытиями.
-- Смена темы оформления (в разработке)
+- Смена темы оформления
 
 <a  href="https://rochernikov.github.io/bicycles/" target="_blank" align="center"><img src="./readme_src/slider.gif" width="100%" alt="Слайдер"></a>
 
@@ -18,6 +18,7 @@
 - Flexbox
 - Grid Layout
 - CSS3 (в т.ч. анимации)
+- CSS veriables
 - Препроцессор (SCSS)
 - Методология BEM
 - Файловая структура BEM Nested

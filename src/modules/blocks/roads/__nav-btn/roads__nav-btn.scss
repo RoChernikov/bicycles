@@ -6,7 +6,7 @@ $className: 'roads__nav-btn';
   height: 50px;
   border-radius: 50%;
   transition: all 0.2s;
-  background-color: #ebebeb;
+  background-color: var(--var--nav-btn-color);
 
   &:hover {
     opacity: 60%;

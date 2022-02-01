@@ -5,9 +5,10 @@ $className: 'content__text';
   font-size: $primaryFontSize;
   line-height: $primaryLineHeight;
   font-weight: $primaryFontWeight;
-  color: $primaryFontColor;
+  color: var(--var-primari-font-color);
   opacity: 70%;
   max-width: 460px;
+  transition: $animationSpeed;
 }
 
 @include breakPoint($className, $smallDesktop) {

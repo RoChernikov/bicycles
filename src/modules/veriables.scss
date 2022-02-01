@@ -1,10 +1,38 @@
+//Тема
+:root {
+  --var-bg-color: #f4f4f4;
+  --var-primari-font-color: #222;
+  --var-secondary-font-color: #151515;
+  --var-footer-bg-color: #efefef;
+  --var-input-border-color: #c7c7c7;
+  --var-theme-switch-opacity: 100%;
+  --var-theme-switch-bg-color: #fff;
+  --var-copyright-color: #cfcfcf;
+  --var--nav-btn-color: #ebebeb;
+  --var-btn-ico-color: #151515;
+  --var-selector-border-color: #e3e3e3;
+}
+
+[dark] {
+  --var-bg-color: #333333;
+  --var-primari-font-color: #e5e5e5;
+  --var-secondary-font-color: #fff;
+  --var-footer-bg-color: #2f2f2f;
+  --var-input-border-color: #7d7d7d;
+  --var-theme-switch-opacity: 35%;
+  --var-theme-switch-bg-color: #545454;
+  --var-copyright-color: #565656;
+  --var--nav-btn-color: #434343;
+  --var-btn-ico-color: #fff;
+  --var-selector-border-color: #7d7d7d;
+}
+
+$animationSpeed: all 0.3s ease;
+
 //шрифты
 $primaryFontFamily: 'Inter', Arial, sans-serif;
 
 //цвета
-$backgroundColor: #f4f4f4;
-$primaryFontColor: #222;
-$secondaryFontColor: #151515;
 $btnColor: #24b47e;
 $hoveredBtnColor: #319e75;
 

@@ -4,5 +4,6 @@ $className: 'footer';
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #efefef;
+  background-color: var(--var-footer-bg-color);
+  transition: $animationSpeed;
 }

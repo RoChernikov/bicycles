@@ -8,7 +8,7 @@ $className: 'footer__form-submit';
   height: 50px;
   border: none;
   background-color: transparent;
-  color: $secondaryFontColor;
+  color: var(--var-secondary-font-color);
   font-size: 13px;
   font-weight: 500;
   line-height: 2;
