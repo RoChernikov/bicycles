@@ -5,6 +5,7 @@ $className: 'footer__logo';
   background: no-repeat url(../images/footer-logo.svg);
   width: 38px;
   height: 38px;
+  opacity: var(--var-logo-opacity);
 }
 
 @include breakPoint($className, $smallMobile) {
