@@ -292,3 +292,43 @@ bikeSelector.addEventListener('input', () => {
       break;
   }
 });
+
+// ******************************************************************
+// PROTOTYPE!----------------------------СМЕНА ТЕМЫ, ДЕМОНСТРАЦИОННЫЙ КОД
+let preferThemeColor = window.matchMedia(
+  '(prefers-color-scheme: dark)'
+).matches; //можно реализовать автоматическое переключение
+const footerThemeSwitch = document.querySelector('#footer-switcher');
+const headerThemeSwitch = document.querySelector('#header-switcher');
+
+const checkTheme = isDark => {
+  if (isDark) {
+    document.body.setAttribute('dark', '');
+  }
+};
+
+const setThemeSwitcher = isDark => {
+  if (isDark) {
+    footerThemeSwitch.setAttribute('checked', '');
+    headerThemeSwitch.setAttribute('checked', '');
+  }
+};
+
+const handleThemeSwitch = isChecked => {
+  if (isChecked) {
+    document.body.setAttribute('dark', '');
+  } else {
+    document.body.removeAttribute('dark', '');
+  }
+};
+
+footerThemeSwitch.onclick = evt => {
+  handleThemeSwitch(evt.target.checked);
+  setThemeSwitcher(document.body.hasAttribute('dark', ''));
+};
+
+headerThemeSwitch.onclick = evt => {
+  handleThemeSwitch(evt.target.checked);
+  setThemeSwitcher(document.body.hasAttribute('dark', ''));
+};
+setThemeSwitcher(document.body.hasAttribute('dark', ''));

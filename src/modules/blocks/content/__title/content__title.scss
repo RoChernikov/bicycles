@@ -5,7 +5,7 @@ $className: 'content__title';
   font-size: $primaryTitleFontSize;
   line-height: $primaryTitleLineHeight;
   font-weight: $primaryTitleFontWeight;
-  color: $secondaryFontColor;
+  color: var(--var-secondary-font-color);
   letter-spacing: -0.5px;
 }
 

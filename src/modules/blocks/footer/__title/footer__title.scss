@@ -5,7 +5,7 @@ $className: 'footer__title';
   font-family: $primaryFontFamily;
   font-size: 24px;
   line-height: 1.3;
-  color: $secondaryFontColor;
+  color: var(--var-secondary-font-color);
   margin-top: 80px;
 }
 

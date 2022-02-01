@@ -2,7 +2,7 @@ $className: 'page-link';
 
 .#{$className} {
   text-decoration: none;
-  color: $secondaryFontColor;
+  color: var(--var-secondary-font-color);
   transition: all 0.2s;
   cursor: pointer;
 
