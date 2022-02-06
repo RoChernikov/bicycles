@@ -2,7 +2,12 @@ const { log } = console;
 import '../pages/index.scss';
 import smoothscroll from 'smoothscroll-polyfill';
 import ThemeSwitch from '../components/ThemeSwitch';
-import { footerThemeSwitcher, headerThemeSwitcher } from '../utils/variables'; 
+import Input from '../components/Input';
+import {
+  footerThemeSwitcher,
+  headerThemeSwitcher,
+  footerInputElement
+} from '../utils/variables';
 // --+++Импорт Swiper+++--
 import Swiper, { Navigation, Autoplay, EffectFade, Pagination } from 'swiper';
 import 'swiper/css';
@@ -43,17 +48,6 @@ menu.addEventListener('click', evt => {
   if (evt.target.classList.contains('menu__link')) {
     closeMenu();
   }
-});
-
-// ******************************************************************
-// PROTOTYPE!----------------------------INPUT, ДЕМОНСТРАЦИОННЫЙ КОД
-const footerInput = document.querySelector('.footer__input');
-footerInput.addEventListener('focus', () => {
-  footerInput.setAttribute('placeholder', '');
-});
-
-footerInput.addEventListener('blur', () => {
-  footerInput.setAttribute('placeholder', 'Ваш e-mail');
 });
 
 // ******************************************************************
@@ -296,5 +290,12 @@ bikeSelector.addEventListener('input', () => {
 });
 
 //theme switch
-const themeSwitchers = new ThemeSwitch ([footerThemeSwitcher, headerThemeSwitcher])
-themeSwitchers.activate()
+const themeSwitchers = new ThemeSwitch([
+  footerThemeSwitcher,
+  headerThemeSwitcher
+]);
+themeSwitchers.activate();
+
+//input placeholder handler
+const inputElement = new Input(footerInputElement, 'Ваш e-mail');
+inputElement.activate();
