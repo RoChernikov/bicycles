@@ -236,7 +236,7 @@ const renderBikesSliderCards = data => {
 
 bikeTabs.forEach(tab => {
   tab.addEventListener('click', () => {
-    const tabId = tab.getAttribute('dataId');
+    const tabId = tab.getAttribute('data-id');
     bikeTabs.forEach(tab => tab.classList.remove('bikes__nav-link_active'));
     tab.classList.add('bikes__nav-link_active');
 
@@ -267,7 +267,7 @@ bikeSelector.addEventListener('input', () => {
   const switchTab = tabId => {
     bikeTabs.forEach(tab => tab.classList.remove('bikes__nav-link_active'));
     bikeTabs.forEach(tab => {
-      if (tab.getAttribute('dataId') === tabId) {
+      if (tab.getAttribute('data-id') === tabId) {
         tab.classList.add('bikes__nav-link_active');
       }
     });
