@@ -1,6 +1,13 @@
 const { log } = console;
 import '../pages/index.scss';
 import smoothscroll from 'smoothscroll-polyfill';
+import ThemeSwitch from '../components/ThemeSwitch';
+import Input from '../components/Input';
+import {
+  footerThemeSwitcher,
+  headerThemeSwitcher,
+  footerInputElement
+} from '../utils/variables';
 // --+++Импорт Swiper+++--
 import Swiper, { Navigation, Autoplay, EffectFade, Pagination } from 'swiper';
 import 'swiper/css';
@@ -41,17 +48,6 @@ menu.addEventListener('click', evt => {
   if (evt.target.classList.contains('menu__link')) {
     closeMenu();
   }
-});
-
-// ******************************************************************
-// PROTOTYPE!----------------------------INPUT, ДЕМОНСТРАЦИОННЫЙ КОД
-const footerInput = document.querySelector('.footer__input');
-footerInput.addEventListener('focus', () => {
-  footerInput.setAttribute('placeholder', '');
-});
-
-footerInput.addEventListener('blur', () => {
-  footerInput.setAttribute('placeholder', 'Ваш e-mail');
 });
 
 // ******************************************************************
@@ -176,7 +172,7 @@ const bikesSlider = new Swiper('.bikes__slider', {
 
 // ******************************************************************
 // PROTOTYPE!----------------------------КАРТОЧКИ, ДЕМОНСТРАЦИОННЫЙ КОД
-import bikeCards from '../components/initial-cards';
+import bikeCards from '../utils/initial-cards';
 const highwayBikes = bikeCards.filter(card => card.type === 'highway');
 const gravelBikes = bikeCards.filter(card => card.type === 'gravel');
 const ttBikes = bikeCards.filter(card => card.type === 'tt');
@@ -293,36 +289,13 @@ bikeSelector.addEventListener('input', () => {
   }
 });
 
-// ******************************************************************
-// PROTOTYPE!----------------------------СМЕНА ТЕМЫ, ДЕМОНСТРАЦИОННЫЙ КОД
-let preferThemeColor = window.matchMedia(
-  '(prefers-color-scheme: dark)'
-).matches; //можно реализовать автоматическое переключение
-const footerThemeSwitch = document.querySelector('#footer-switcher');
-const headerThemeSwitch = document.querySelector('#header-switcher');
+//theme switch
+const themeSwitchers = new ThemeSwitch([
+  footerThemeSwitcher,
+  headerThemeSwitcher
+]);
+themeSwitchers.activate();
 
-const setThemeSwitcher = isDark => {
-  if (isDark) {
-    footerThemeSwitch.setAttribute('checked', '');
-    headerThemeSwitch.setAttribute('checked', '');
-  }
-};
-
-const handleThemeSwitch = isChecked => {
-  if (isChecked) {
-    document.body.setAttribute('dark', '');
-  } else {
-    document.body.removeAttribute('dark', '');
-  }
-};
-
-footerThemeSwitch.onclick = evt => {
-  handleThemeSwitch(evt.target.checked);
-  setThemeSwitcher(document.body.hasAttribute('dark', ''));
-};
-
-headerThemeSwitch.onclick = evt => {
-  handleThemeSwitch(evt.target.checked);
-  setThemeSwitcher(document.body.hasAttribute('dark', ''));
-};
-setThemeSwitcher(document.body.hasAttribute('dark', ''));
+//input placeholder handler
+const inputElement = new Input(footerInputElement, 'Ваш e-mail');
+inputElement.activate();
