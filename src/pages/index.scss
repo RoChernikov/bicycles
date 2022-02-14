@@ -25,24 +25,7 @@
 //--+++roads+++--
 @import '../modules/blocks/roads.scss';
 //--+++bikes+++--
-@import '../modules/blocks/bikes/__header/bikes__header.scss';
-@import '../modules/blocks/bikes/__title/bikes__title.scss';
-@import '../modules/blocks/bikes/__nav-list/bikes__nav-list.scss';
-@import '../modules/blocks/bikes/__nav-item/bikes__nav-item.scss';
-@import '../modules/blocks/bikes/__list/bikes__list.scss';
-@import '../modules/blocks/bikes/__item/bikes__item.scss';
-@import '../modules/blocks/bikes/__nav-link/bikes__nav-link.scss';
-@import '../modules/blocks/bikes/__nav-link/_active/bikes__nav-link_active.scss';
-@import '../modules/blocks/bikes/__image/bikes__image.scss';
-@import '../modules/blocks/bikes/__caption/bikes__caption.scss';
-@import '../modules/blocks/bikes/__link/bikes__link.scss';
-@import '../modules/blocks/bikes/__slider/bikes__slider.scss';
-@import '../modules/blocks/bikes/__slider-wrapper/bikes__slider-wrapper.scss';
-@import '../modules/blocks/bikes/__slider-item/bikes__slider-item.scss';
-@import '../modules/blocks/bikes/__pagination/bikes__pagination.scss';
-@import '../modules/blocks/bikes/__bullet/bikes__bullet.scss';
-@import '../modules/blocks/bikes/__bullet/_active/bikes__bullet_active.scss';
-@import '../modules/blocks/bikes/__selector/bikes__selector.scss';
+@import '../modules/blocks/bikes.scss';
 //--+++workout+++--
 @import '../modules/blocks/workout/workout.scss';
 @import '../modules/blocks/workout/__title/workout__title.scss';

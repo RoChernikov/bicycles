@@ -1,9 +1,0 @@
-$className: 'bikes__link';
-
-@include breakPoint($className, $mobile) {
-  display: grid;
-
-  &:hover {
-    opacity: 1;
-  }
-}
