@@ -1,0 +1,162 @@
+$className: 'content';
+
+.#{$className} {
+  width: 100%;
+  flex: 1 1 auto;
+  z-index: 0;
+
+  &__title {
+    font-family: $primaryFontFamily;
+    font-size: $primaryTitleFontSize;
+    line-height: $primaryTitleLineHeight;
+    font-weight: $primaryTitleFontWeight;
+    color: var(--var-secondary-font-color);
+    letter-spacing: -0.5px;
+
+    @include media($tablet) {
+      font-size: $primaryTitleFontSizeTablet;
+    }
+
+    @include media($smallTablet) {
+      font-size: $primaryTitleFontSizeSmallTablet;
+    }
+
+    @include media($smallMobile) {
+      font-size: $primaryTitleFontSizeSmallMobile;
+      line-height: $primaryTitleLineHeightSmallMobile;
+    }
+  }
+
+  &__text {
+    font-family: $primaryFontFamily;
+    font-size: $primaryFontSize;
+    line-height: $primaryLineHeight;
+    font-weight: $primaryFontWeight;
+    color: var(--var-primari-font-color);
+    opacity: 70%;
+    max-width: 460px;
+    transition: $animationSpeed;
+
+    @include media($smallDesktop) {
+      max-width: 400px;
+    }
+
+    @include media($tablet) {
+      max-width: 360px;
+    }
+
+    @include media($mobile) {
+      max-width: 100%;
+    }
+
+    @include media($smallMobile) {
+      font-size: $primaryFontSizeMobile;
+      line-height: $primaryLineHeightMobile;
+    }
+  }
+
+  &__section {
+    padding: 0 120px;
+    scroll-margin-top: 65px;
+
+    @include media($smallDesktop) {
+      padding: 0 90px;
+    }
+
+    @include media($tablet) {
+      padding: 0 60px;
+    }
+
+    @include media($mobile) {
+      padding: 60px 30px 80px;
+      border-top: 1px solid var(--var-selector-border-color);
+    }
+
+    @include media($smallMobile) {
+      padding: 40px 18px 60px;
+    }
+
+    &_place {
+      &_hero {
+        padding-top: 20px;
+        padding-left: 120px;
+        padding-right: 0;
+
+        @include media($smallDesktop) {
+          padding-left: 90px;
+        }
+
+        @include media($tablet) {
+          padding-left: 60px;
+        }
+
+        @include media($mobile) {
+          border-top: none;
+          padding-top: 0;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+
+        @include media($smallMobile) {
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+      }
+
+      &_quote {
+        padding-top: 117px;
+        padding-bottom: 60px;
+
+        @include media($mobile) {
+          padding-top: 60px;
+        }
+
+        @include media($smallMobile) {
+          padding-top: 20px;
+          padding-bottom: 80px;
+        }
+      }
+
+      &_roads {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-right: 0;
+        overflow: hidden;
+
+        @include media($mobile) {
+          padding-top: 40px;
+          padding-bottom: 80px;
+          padding-right: 30px;
+        }
+
+        @include media($smallMobile) {
+          padding-right: 18px;
+        }
+      }
+
+      &_bikes {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        @include media($smallMobile) {
+          padding: 40px 0px 80px;
+        }
+      }
+
+      &_workout {
+        padding-top: 150px;
+        padding-bottom: 120px;
+
+        @include media($tablet) {
+          padding-top: 60px;
+          padding-bottom: 80px;
+        }
+
+        @include media($smallMobile) {
+          padding-top: 40px;
+          padding-bottom: 60px;
+        }
+      }
+    }
+  }
+}

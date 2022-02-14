@@ -17,15 +17,7 @@
 //--+++Шапка сайта+++--
 @import '../modules/blocks/header.scss';
 //--+++content+++--
-@import '../modules/blocks/content/content.scss';
-@import '../modules/blocks/content/__title/content__title.scss';
-@import '../modules/blocks/content/__text/content__text.scss';
-@import '../modules/blocks/content/__section/content__section.scss';
-@import '../modules/blocks/content/__section/_place/content__section_place_hero.scss';
-@import '../modules/blocks/content/__section/_place/content__section_place_quote.scss';
-@import '../modules/blocks/content/__section/_place/content__section_place_roads.scss';
-@import '../modules/blocks/content/__section/_place/content__section_place_bikes.scss';
-@import '../modules/blocks/content/__section/_place/content__section_place_workout.scss';
+@import '../modules/blocks/content.scss';
 //--+++hero+++--
 @import '../modules/blocks/hero.scss';
 //--+++quote+++--
