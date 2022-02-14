@@ -36,10 +36,10 @@ $className: 'button';
   &:active {
     transform: scale(0.97);
   }
-}
 
-@include breakPoint($className, $smallMobile) {
-  height: 46px;
-  font-size: 13px;
-  line-height: $primaryLineHeightMobile;
+  @include media($smallMobile) {
+    height: 46px;
+    font-size: 13px;
+    line-height: $primaryLineHeightMobile;
+  }
 }
