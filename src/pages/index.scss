@@ -5,11 +5,7 @@
 //--+++Миксины+++--
 @import '../modules/mixins.scss';
 //_______________________________________________________________________________________
-@import '../modules/blocks/page/page.scss';
-@import '../modules/blocks/page/_hold/page_hold.scss';
-@import '../modules/blocks/page/__section/page__section.scss';
-@import '../modules/blocks/page/__section/_place/page__section_place_content.scss';
-@import '../modules/blocks/page/__section/_place/page__section_place_footer.scss';
+@import '../modules/blocks/page.scss';
 @import '../modules/blocks/page-text/page-text.scss';
 @import '../modules/blocks/page-list/page-list.scss';
 @import '../modules/blocks/page-link/page-link.scss';
