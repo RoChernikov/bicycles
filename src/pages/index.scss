@@ -23,26 +23,7 @@
 //--+++quote+++--
 @import '../modules/blocks/quote.scss';
 //--+++roads+++--
-@import '../modules/blocks/roads/roads.scss';
-@import '../modules/blocks/roads/__title/roads__title.scss';
-@import '../modules/blocks/roads/__text-slider/roads__text-slider.scss';
-@import '../modules/blocks/roads/__text-slider/_type/roads__text-slider_type_text.scss';
-@import '../modules/blocks/roads/__text-slider/_type/roads__text-slider_type_title.scss';
-@import '../modules/blocks/roads/__text-slider-wrapper/roads__text-slider-wrapper.scss';
-@import '../modules/blocks/roads/__text-slider-item/roads__text-slider-item.scss';
-@import '../modules/blocks/roads/__image-slider/roads__image-slider.scss';
-@import '../modules/blocks/roads/__img-slider-wrapper/roads__img-slider-wrapper.scss';
-@import '../modules/blocks/roads/__img-slider-item/roads__img-slider-item.scss';
-@import '../modules/blocks/roads/__text/roads__text.scss';
-@import '../modules/blocks/roads/__img/roads__img.scss';
-@import '../modules/blocks/roads/__badge/roads__badge.scss';
-@import '../modules/blocks/roads/__badge/_type/roads__badge_type_highway.scss';
-@import '../modules/blocks/roads/__badge/_type/roads__padge_type_gravel.scss';
-@import '../modules/blocks/roads/__badge/_type/roads__badge_type_tt.scss';
-@import '../modules/blocks/roads/__navigation/roads__navigation.scss';
-@import '../modules/blocks/roads/__nav-btn/roads__nav-btn.scss';
-@import '../modules/blocks/roads/__nav-btn/_type/roads__nav-btn_type_prev.scss';
-@import '../modules/blocks/roads/__nav-btn/_type/roads__nav-btn_type_next.scss';
+@import '../modules/blocks/roads.scss';
 //--+++bikes+++--
 @import '../modules/blocks/bikes/__header/bikes__header.scss';
 @import '../modules/blocks/bikes/__title/bikes__title.scss';
