@@ -1,9 +1,0 @@
-$className: 'workout__text';
-
-.#{$className} {
-  margin-top: 50px;
-}
-
-@include breakPoint($className, $mobile) {
-  margin-top: 40px;
-}

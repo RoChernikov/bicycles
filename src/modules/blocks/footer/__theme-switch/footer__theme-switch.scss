@@ -1,9 +1,0 @@
-$className: 'footer__theme-switch';
-
-.#{$className} {
-  margin-right: 3px;
-}
-
-@include breakPoint($className, $smallMobile) {
-  display: none;
-}

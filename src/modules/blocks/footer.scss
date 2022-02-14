@@ -1,0 +1,126 @@
+$className: 'footer';
+
+.#{$className} {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--var-footer-bg-color);
+  transition: $animationSpeed;
+
+  &__content {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    max-width: 229px;
+    font-family: $primaryFontFamily;
+    font-size: 24px;
+    line-height: 1.3;
+    color: var(--var-secondary-font-color);
+    margin-top: 80px;
+
+    @include media($smallMobile) {
+      margin-top: 60px;
+    }
+  }
+
+  &__form {
+    position: relative;
+    max-width: 360px;
+    margin-top: 50px;
+
+    @include media($smallMobile) {
+      margin-top: 40px;
+    }
+  }
+
+  &__form-submit {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 16px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    color: var(--var-secondary-font-color);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 2;
+  }
+
+  &__input {
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: var(--var-footer-bg-color);
+    border: 1px solid var(--var-input-border-color);
+    border-radius: 4px;
+    padding-left: 19px;
+    padding-right: 60px;
+    font-family: $primaryFontFamily;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 2;
+    color: var(--var-secondary-font-color);
+    transition: $animationSpeed;
+
+    &::placeholder {
+      color: var(--var-primari-font-color);
+      opacity: 70%;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover::placeholder {
+      color: var(--var-secondary-font-color);
+      opacity: 100%;
+    }
+  }
+
+  &__lower-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 86px;
+    margin-bottom: 60px;
+
+    @include media($smallMobile) {
+      margin-top: 90px;
+      margin-bottom: 16px;
+      align-items: center;
+    }
+  }
+
+  &__copyright {
+    font-family: $primaryFontFamily;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: var(--var-copyright-color);
+  }
+
+  &__theme-switch {
+    margin-right: 3px;
+
+    @include media($smallMobile) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    display: none;
+    background: no-repeat url(../images/footer-logo.svg);
+    width: 38px;
+    height: 38px;
+    opacity: var(--var-logo-opacity);
+
+    @include media($smallMobile) {
+      display: block;
+    }
+  }
+}
