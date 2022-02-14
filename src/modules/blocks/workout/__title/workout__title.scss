@@ -1,5 +1,0 @@
-$className: 'workout__title';
-
-@include breakPoint($className, $mobile) {
-  margin-bottom: 40px;
-}

@@ -1,0 +1,125 @@
+$className: 'header';
+
+.#{$className} {
+  box-sizing: border-box;
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--var-bg-color);
+  z-index: 100;
+  box-shadow: var(--var-header-shadow);
+  transition: $animationSpeed;
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    min-height: 74px;
+    background-color: var(--var-bg-color);
+    transition: $animationSpeed;
+  }
+
+  &__nav {
+    @include media($smallMobile) {
+      display: flex;
+      visibility: hidden;
+      opacity: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--var-bg-color);
+      position: fixed;
+      overflow: hidden;
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: $animationSpeed;
+      transform: translate(100%, 0);
+    }
+
+    &_active {
+      visibility: visible;
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
+  &__link {
+    font-size: $secondaryNavFontSize;
+    line-height: $secondaryNavLineHeight;
+    font-weight: 500;
+
+    @include media($smallMobile) {
+      font-size: $primaryFontSize;
+      line-height: 1;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    &:checked + .header__burger-elements {
+      height: 0px;
+    }
+
+    &:checked + .header__burger-elements:after {
+      transform: rotate(-45deg);
+    }
+    &:checked + .header__burger-elements:before {
+      transform: rotate(45deg) translate(-5.5px, 2.5px);
+    }
+  }
+
+  &__burger-elements {
+    display: none;
+    width: 22px;
+    height: 3px;
+    background-color: var(--var-btn-ico-color);
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-4px);
+    transition: all 0.1s;
+
+    &:before {
+      content: '';
+      width: 22px;
+      height: 3px;
+      background-color: transparent;
+      height: 16px;
+      border-top: 3px solid var(--var-btn-ico-color);
+      position: absolute;
+      transform: translateY(-8px);
+      transition: transform 0.4s, border-color 0.1s;
+    }
+    &:after {
+      content: '';
+      width: 22px;
+      height: 3px;
+      background-color: var(--var-btn-ico-color);
+      position: absolute;
+      transform: translateY(8px);
+      transition: transform 0.4s, background-color 0.1s;
+    }
+
+    @include media($smallMobile) {
+      display: block;
+    }
+  }
+
+  &__theme-switch {
+    display: none;
+
+    @include media($smallMobile) {
+      display: flex;
+      margin-bottom: 36px;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+$className: 'quote';
+
+.#{$className} {
+  display: grid;
+  column-gap: 80px;
+  grid-template-columns: minmax(min-content, 650px) minmax(300px, 1fr);
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 1;
+    grid-row: 1/5;
+
+    @include media($mobile) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+
+  &__title {
+    font-family: $primaryFontFamily;
+    font-size: $secondaryTitleFontSize;
+    line-height: $secondaryTitleLineHeight;
+    font-weight: $secondaryTitleFontWeight;
+    color: var(--var-secondary-font-color);
+    grid-column: 2;
+    max-width: 470px;
+    letter-spacing: -0.5px;
+
+    @include media($tablet) {
+      font-size: 29px;
+    }
+
+    @include media($mobile) {
+      margin-top: 43px;
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    @include media($smallMobile) {
+      font-size: 23px;
+    }
+  }
+
+  &__author {
+    font-family: $primaryFontFamily;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: $secondaryFontWeight;
+    color: var(--var-secondary-font-color);
+    grid-column: 2;
+    margin-top: 257px;
+
+    @include media($mobile) {
+      grid-column: 1;
+      grid-row: 3;
+      margin-top: 80px;
+    }
+
+    @include media($smallMobile) {
+      font-size: 14px;
+      margin-top: 35px;
+    }
+  }
+
+  &__author-about {
+    font-family: $primaryFontFamily;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: $primaryFontWeight;
+    color: var(--var-primari-font-color);
+    opacity: 70%;
+    grid-column: 2;
+    margin-top: 6px;
+
+    @include media($mobile) {
+      grid-column: 1;
+      grid-row: 4;
+    }
+
+    @include media($smallMobile) {
+      font-size: 10px;
+      margin-top: 2px;
+    }
+  }
+
+  @include media($tablet) {
+    column-gap: 50px;
+  }
+
+  @include media($mobile) {
+    grid-template-columns: 1fr;
+  }
+}

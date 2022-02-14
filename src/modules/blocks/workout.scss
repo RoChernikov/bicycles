@@ -1,0 +1,74 @@
+$className: 'workout';
+
+.#{$className} {
+  display: grid;
+  grid-template-columns: minmax(520px, 1fr) minmax(min-content, 580px);
+
+  @include media($smallDesktop) {
+    grid-template-columns: minmax(450px, 1fr) minmax(min-content, 580px);
+  }
+
+  @include media($tablet) {
+    grid-template-columns: minmax(400px, 1fr) minmax(min-content, 580px);
+  }
+
+  @include media($mobile) {
+    grid-template-columns: 1fr;
+  }
+
+  &__title {
+    @include media($mobile) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text {
+    margin-top: 50px;
+
+    @include media($mobile) {
+      margin-top: 40px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 182px;
+
+    @include media($mobile) {
+      margin-top: 40px;
+    }
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: $primaryFontSize;
+    line-height: $primaryLineHeight;
+
+    @include media($mobile) {
+      font-size: $secondaryNavFontSize;
+      line-height: 1.4;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 2;
+    grid-row: 1/5;
+
+    @include media($mobile) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  }
+}

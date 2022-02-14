@@ -1,0 +1,70 @@
+$className: 'theme-switch';
+
+.#{$className} {
+  position: relative;
+  width: 135px;
+  display: flex;
+  justify-content: space-between;
+  -webkit-tap-highlight-color: transparent;
+
+  &__switcher {
+    appearance: none;
+    position: absolute;
+    top: 0;
+
+    &:checked + .theme-switch__slider::after {
+      margin-left: 20px;
+    }
+  }
+
+  &__slider {
+    cursor: pointer;
+    position: relative;
+    margin-right: 44px;
+    margin-top: 2px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 44px;
+      height: 24px;
+      background-color: var(--var-theme-switch-bg-color);
+      border-radius: 15px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      background-color: $btnColor;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__ico {
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+    opacity: var(--var-theme-switch-opacity);
+
+    &_type {
+      &_dark {
+        background-image: url(../images/dark-theme-ico.svg);
+        width: 20px;
+        height: 20px;
+      }
+
+      &_light {
+        background-image: url(../images/light-theme-ico.svg);
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+}
