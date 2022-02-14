@@ -11,12 +11,7 @@
 @import '../modules/blocks/page-link.scss';
 @import '../modules/blocks/button.scss';
 //--+++theme-switch+++--
-@import '../modules/blocks/theme-switch/theme-switch.scss';
-@import '../modules/blocks/theme-switch/__switcher/theme-switch__switcher.scss';
-@import '../modules/blocks/theme-switch/__slider/theme-switch__slider.scss';
-@import '../modules/blocks/theme-switch/__ico/theme-switch__ico.scss';
-@import '../modules/blocks/theme-switch/__ico/_type/theme-switch__ico_type_dark.scss';
-@import '../modules/blocks/theme-switch/__ico/_type/theme-switch__ico_type_light.scss';
+@import '../modules/blocks/theme-switch.scss';
 //--+++menu+++--
 @import '../modules/blocks/menu/menu.scss';
 @import '../modules/blocks/menu/__item/menu__item.scss';
